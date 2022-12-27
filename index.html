@@ -1,0 +1,2215 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/admin.css" rel="stylesheet" />
+    <link href="/css/imgbtn.css" rel="stylesheet" />
+    <title>Sidebar menu</title>
+    <style>
+        .dis {
+            display: none;
+        }
+
+        #header {
+            height: 0px !important;
+        }
+
+        .fa {
+            font-family: 'FontAwesome' !important;
+        }
+
+        .iconupdate {
+            font-size: 30px;
+        }
+
+        .iconchange {
+            padding: 10px;
+        }
+
+        .iconsize {
+            font-size: xxx-large;
+        }
+        .txtdec{
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hit-menu" class="col-xs-hide col-sm-hide"></div>
+    <div class="divid menu-mobile-background "></div>
+    <div id="header">
+        <input type="hidden" id="boaderpagecolor" value="" />
+        <div class="divid header-inner">
+            <div class="divid header-topo">
+                <button class="button-menu-mobile " style="background-color: transparent;">
+                    <div class="divid box-stripes">
+                        <span class="onclickbtn stripe-top"></span>
+                        <span class="onclickbtn stripe-middle"></span>
+                        <span class="onclickbtn stripe-bottom"></span>
+                    </div>
+                </button>
+                <span
+                    class="onclickbtn header-nomeEmpresa header-nomeEmpresa_mobile col-xs-show col-sm-show">Dashboard</span>
+                <a href="https://lokendra.co" style="text-decoration: none;" class="brand-icon onclickbtn">Lokendra</a>
+            </div>
+        </div>
+    </div>
+    <div id="menu" class="">
+        <div class="divid menu-header">
+            <span class="onclickbtn shape-remove-shadow_green"></span>
+            <div class="divid header-topo">
+                <div class="divid header-controlMenu  col-sm-hide col-xs-hide">
+                    <span class="onclickbtn header-nomeEmpresa">
+                        <img src="/img/Logo (1).svg" style="height: 45px; width: 136px;"
+                            class="onclickbtn">
+                    </span>
+                    <button class="header-controlMenuButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                            x="0px" y="0px" width="20px" height="20px" viewBox="0 0 408 408"
+                            style="enable-background:new 0 0 408 408;" xml:space="preserve"
+                            class="detail convertSvgInline replaced-svg" data-id="61022" data-kw="go10">
+                            <g>
+                                <g id="arrow-back">
+                                    <path
+                                        d="M408,178.5H96.9L239.7,35.7L204,0L0,204l204,204l35.7-35.7L96.9,229.5H408V178.5z">
+                                    </path>
+                                </g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                            <g>
+                            </g>
+                        </svg>
+                    </button>
+                    <div class="divid clear"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="divid menu-box" style=" background-color: white; ">
+            <div class="divid menu-wrapper-inner" style="padding-top: 60px;">
+                <div class="divid menu-wrapper">
+                    <div class="divid menu-slider">
+                        <div class="divid menu">
+                            <ul>
+                                <li>
+                                    <div class="divid menu-item">
+                                        <a href="#" class="menu-anchor onclickbtn" data-menu="1">
+                                            <i style="margin-right:10px ;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-paint-bucket" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M6.192 2.78c-.458-.677-.927-1.248-1.35-1.643a2.972 2.972 0 0 0-.71-.515c-.217-.104-.56-.205-.882-.02-.367.213-.427.63-.43.896-.003.304.064.664.173 1.044.196.687.556 1.528 1.035 2.402L.752 8.22c-.277.277-.269.656-.218.918.055.283.187.593.36.903.348.627.92 1.361 1.626 2.068.707.707 1.441 1.278 2.068 1.626.31.173.62.305.903.36.262.05.64.059.918-.218l5.615-5.615c.118.257.092.512.05.939-.03.292-.068.665-.073 1.176v.123h.003a1 1 0 0 0 1.993 0H14v-.057a1.01 1.01 0 0 0-.004-.117c-.055-1.25-.7-2.738-1.86-3.494a4.322 4.322 0 0 0-.211-.434c-.349-.626-.92-1.36-1.627-2.067-.707-.707-1.441-1.279-2.068-1.627-.31-.172-.62-.304-.903-.36-.262-.05-.64-.058-.918.219l-.217.216zM4.16 1.867c.381.356.844.922 1.311 1.632l-.704.705c-.382-.727-.66-1.402-.813-1.938a3.283 3.283 0 0 1-.131-.673c.091.061.204.15.337.274zm.394 3.965c.54.852 1.107 1.567 1.607 2.033a.5.5 0 1 0 .682-.732c-.453-.422-1.017-1.136-1.564-2.027l1.088-1.088c.054.12.115.243.183.365.349.627.92 1.361 1.627 2.068.706.707 1.44 1.278 2.068 1.626.122.068.244.13.365.183l-4.861 4.862a.571.571 0 0 1-.068-.01c-.137-.027-.342-.104-.608-.252-.524-.292-1.186-.8-1.846-1.46-.66-.66-1.168-1.32-1.46-1.846-.147-.265-.225-.47-.251-.607a.573.573 0 0 1-.01-.068l3.048-3.047zm2.87-1.935a2.44 2.44 0 0 1-.241-.561c.135.033.324.11.562.241.524.292 1.186.8 1.846 1.46.45.45.83.901 1.118 1.31a3.497 3.497 0 0 0-1.066.091 11.27 11.27 0 0 1-.76-.694c-.66-.66-1.167-1.322-1.458-1.847z" />
+                                                </svg>
+                                            </i>Color
+                                        </a>
+                                        <svg class="spt" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
+                                            width="10px" height="10px" viewBox="0 0 451.846 451.847"
+                                            style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve">
+                                            <g>
+                                                <path
+                                                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z">
+                                                </path>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="divid menu-item">
+                                        <a href="#" class="menu-anchor onclickbtn" data-menu="2">
+                                            <i style="margin-right:10px ;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-file-earmark-font-fill"
+                                                    viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM5.057 6h5.886L11 8h-.5c-.18-1.096-.356-1.192-1.694-1.235l-.298-.01v5.09c0 .47.1.582.903.655v.5H6.59v-.5c.799-.073.898-.184.898-.654V6.755l-.293.01C5.856 6.808 5.68 6.905 5.5 8H5l.057-2z" />
+                                                </svg>
+                                            </i>Fonts
+                                        </a>
+                                        <svg class="spt" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
+                                            width="10px" height="10px" viewBox="0 0 451.846 451.847"
+                                            style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve">
+                                            <g>
+                                                <path
+                                                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z">
+                                                </path>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </li>
+                                <!-- <li>
+                                  <div class="divid menu-item" ><a href="#" >Template</a></div>
+                                </li> -->
+                                <li>
+                                    <div class="divid menu-item" style="display:flex">
+                                        <a data-menu="4" class="menu-anchor onclickbtn"
+                                            style=" width: 100%; font-weight:medium;">
+                                            <i style="margin-right:10px ;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
+                                                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                                    <path
+                                                        d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z" />
+                                                </svg>
+                                            </i>Image
+                                        </a>
+                                        <svg class="spt" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
+                                            width="10px" height="10px" viewBox="0 0 451.846 451.847"
+                                            style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve">
+                                            <g>
+                                                <path
+                                                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z">
+                                                </path>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </li>
+                                <li>
+                                    <hr>
+                                </li>
+
+                                <li>
+
+                                    <div class="divid menu-item" style="display:flex">
+                                        <a onclick="alert()" class="menu-anchor onclickbtn"
+                                            style=" width: 100%; font-weight:medium;">
+                                            <i style="margin-right:10px ;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                    fill="currentColor" class="bi bi-broadcast" viewBox="0 0 16 16">
+                                                    <path
+                                                        d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+                                                </svg>
+                                            </i>Publish
+                                        </a>
+                                        <div class="divid spinner-box" id="logoimg1" style="margin-right: 20px;">
+                                            <div class="divid circle-border">
+                                                <div class="divid circle-core"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+
+
+
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="divid submenu menu" data-menu="1">
+                            <div class="divid submenu-back">
+                                <div class="divid menu-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" x="0px" y="0px" width="10px" height="10px"
+                                        viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+                                        xml:space="preserve" class="spt">
+                                        <g>
+                                            <path
+                                                d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0   c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744   c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z">
+                                            </path>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                    </svg>
+                                    <a href="#" class="menu-back onclickbtn">BACK</a>
+                                    <input type="hidden" id="ccolor" value="0" />
+                                </div>
+                            </div>
+                            <ul style="padding-left: 30px; margin-top:15px; ">
+                                <li>
+                                    <div class="divid  dd col-lg-12" style="display: flex;  padding-left: 0px;">
+                                        <div class="divid col-6" style="padding-left: 0px;">
+                                            <label class="dd" style="margin-bottom:15px;">Background Color:</label>
+                                            <a id="color-picker" class="onclickbtn" onclick="changeColor(this)"></a>
+                                        </div>
+                                        <div class="divid col-6" style="padding-left: 0px;">
+                                            <label class="dd" style="margin-bottom:15px;">Component Color:</label>
+                                            <a id="color-picker7" class="onclickbtn" onchange="compColor(this)"></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <br>
+                                <br>
+                                <li>
+                                    <label class="dd " style="margin-bottom:15px; font-weight: 600;">Icons
+                                        Color:</label>
+                                    <a id="color-picker8" class="onclickbtn" onclick="changeIconColor(this)"></a>
+                                    <br>
+                                <li>
+                                    <label class="dd " style="margin-bottom:15px; font-weight: 600;">Button
+                                        Color:</label>
+                                    <div class="divid  dd col-lg-12" style="display: flex;  padding-left: 0px;">
+                                        <div class="divid col-4" style="padding-left: 0px;">
+                                            <label>Color:</label>
+                                            <a id="color-picker1" class="onclickbtn" onclick="changebtnColor(this)"></a>
+                                        </div>
+                                        <div class="divid col-4" style="padding-left: 0px;">
+                                            <label>Font:</label>
+                                            <a id="color-picker2" class="onclickbtn"
+                                                onclick="changefontColor(this)"></a>
+
+                                        </div>
+                                        <div class="divid col-4" style="padding-left: 0px;">
+                                            <label>Border:</label>
+                                            <a id="color-picker3" class="onclickbtn"
+                                                onclick="changeborderColor(this)"></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <br>
+                                <br>
+                                <li>
+                                    <label class="dd " style="margin-bottom:15px; font-weight: 600;">Button
+                                        Hover:</label>
+                                    <a id="color-picker9" class="onclickbtn" onchange="buttonhovercolor(this)"></a>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="divid submenu menu" data-menu="2">
+                            <div class="divid submenu-back">
+                                <div class="divid menu-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" x="0px" y="0px" width="10px" height="10px"
+                                        viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+                                        xml:space="preserve" class="spt">
+                                        <g>
+                                            <path
+                                                d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0   c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744   c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z">
+                                            </path>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                    </svg>
+                                    <a href="#" class="menu-back onclickbtn">BACK</a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <br>
+                                    <label>Font Color :</label>
+                                    <br>
+                                    <a id="color-picker5" class="onclickbtn" onchange="changetextColor(this)"></a>
+                                </li>
+
+                                <li>
+                                    <br>
+                                    <label>Font family </label>
+                                    <select id="select_font" class="dropdown-item" style="width: 95%;"
+                                        onchange="changeFont(this);">
+                                        <option value="Arial">Arial</option>
+                                        <option value="Sans Serif" selected>Sans Serif</option>
+                                        <option value="Comic Sans MS">Comic Sans MS</option>
+                                        <option value="Times New Roman">Times New Roman</option>
+                                        <option value="Courier New">Courier New</option>
+                                        <option value="Verdana">Verdana</option>
+                                        <option value="Trebuchet MS">Trebuchet MS</option>
+                                        <option value="Arial Black">Arial Black</option>
+                                        <option value="Impact">Impact</option>
+                                        <option value="Bookman">Bookman</option>
+                                        <option value="Garamond">Garamond</option>
+                                        <option value="Palatino">Palatino</option>
+                                        <option value="Georgia">Georgia</option>
+                                    </select>
+
+                                </li>
+                                <li>
+                                    <br>
+                                    <label>Font Weight</label>
+                                    <select id="select_fontweight" class="dropdown-item" style="width: 95%;"
+                                        onchange="changefontweight(this);">
+                                        <option value="normal" selected>Normal</option>
+                                        <option value="100">100</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="400" selected>400</option>
+                                        <option value="500">500</option>
+                                        <option value="600">600</option>
+                                        <option value="700">700</option>
+                                        <option value="800">800</option>
+                                        <option value="900">900</option>
+                                        <option value="bold">bold</option>
+                                        <option value="bolder">bolder</option>
+                                        <option value="lighter">lighter</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <br>
+                                    <label>Font Style</label>
+                                    <select id="select_style" class="dropdown-item" style="width: 95%;"
+                                        onchange="changeStyle(this);">
+                                        <option value="italic">Italic</option>
+                                        <option value="normal" selected>Normal</option>
+                                        <option value="oblique">Oblique</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <br>
+                                    <label>Font size</label>
+                                    <select id="select_fontsize" class="dropdown-item" style="width: 95%;"
+                                        onchange="changefontsize(this);">
+                                        <option value="10">10</option>
+                                        <option value="12" selected>12</option>
+                                        <option value="14">14</option>
+                                        <option value="16">16</option>
+                                        <option value="18">18</option>
+                                        <option value="20">20</option>
+                                        <option value="22">22</option>
+                                        <option value="24">24</option>
+                                        <option value="26">26</option>
+                                        <option value="28">28</option>
+                                        <option value="30">30</option>
+                                        <option value="36">36</option>
+                                        <option value="40">40</option>
+                                        <option value="48">48</option>
+                                        <option value="54">54</option>
+                                        <option value="60">60</option>
+                                        <option value="66">66</option>
+                                        <option value="72">72</option>
+                                        <option value="78">78</option>
+                                        <option value="84">84</option>
+                                        <option value="90">90</option>
+                                        <option value="96">96</option>
+                                        <option value="96">128</option>
+                                        <option value="96">256</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <br>
+                                    <label>Font Decoration</label>
+                                    <select id="select_fontsize" class="dropdown-item" style="width: 95%;"
+                                        onchange="changefontdecoration(this);">
+                                        <option value="line-through">Line-through</option>
+                                        <option value="none" selected>None</option>
+                                        <option value="overline">Overline</option>
+                                        <option value="underline">Underline</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <br>
+                                    <label>Font Transform</label>
+                                    <select id="select_fontsize" class="dropdown-item" style="width: 95%;"
+                                        onchange="changefonttransform(this);">
+                                        <option value="capitalize">Capitalize</option>
+                                        <option value="lowercase" selected>Lowercase</option>
+                                        <option value="uppercase">Uppercase</option>
+                                    </select>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="divid submenu menu" data-menu="3">
+                            <div class="divid submenu-back">
+                                <div class="divid menu-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" x="0px" y="0px" width="10px" height="10px"
+                                        viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+                                        xml:space="preserve" class="spt">
+                                        <g>
+                                            <path
+                                                d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0   c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744   c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z">
+                                            </path>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                    </svg>
+                                    <a href="#" class="menu-back onclickbtn">BACK</a>
+                                </div>
+                            </div>
+                            <ul>
+                                <style>
+                                    .dd {
+                                        margin-right: 20px;
+                                    }
+
+                                    label {
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                    }
+                                </style>
+                                <li>
+                                    <br>
+                                    <label class="margin-top:10px">Upload Logo</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 15px; line-height: .7;"
+                                            class="form-control menu-item" type="file">
+                                    </div>
+                                </li>
+                                <hr>
+                                <li>
+                                    <label>Company name</label>
+                                    <div class="divid menu-item dd">
+                                        <input
+                                            style="margin-top: 5px;margin-bottom: 10px; margin-right: 10px; line-height: .5;"
+                                            class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Address</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                            class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Distric</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                            class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>State</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                            class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Mobile Number</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                            class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <hr>
+                                <li>
+                                    <label>Facebook</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                            class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Instagram</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                            class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Linkedin</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                            class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Youtube</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                            class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Twitter</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                            class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="divid submenu menu" data-menu="4">
+                            <div class="divid submenu-back">
+                                <div class="divid menu-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                        version="1.1" x="0px" y="0px" width="10px" height="10px"
+                                        viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+                                        xml:space="preserve" class="spt">
+                                        <g>
+                                            <path
+                                                d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0   c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744   c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z">
+                                            </path>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                        <g>
+                                        </g>
+                                    </svg>
+                                    <a href="#" class="menu-back onclickbtn">BACK</a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <br>
+                                    <label>Upload Image</label>
+                                    <div class="divid menu-item dd">
+                                        <input id="#*"
+                                            style="margin-top: 5px;margin-bottom: 15px;line-height: 1.7; height: 38px;"
+                                            class="form-control menu-item imgid2" title="Upload Image" accept="image/*"
+                                            onchange="ImageUpload(event);" type="file">
+                                    </div>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                            class="form-control menu-item imgurl imgid2" onkeypress='imageurl(event)'
+                                            type="text">
+                                    </div>
+                                </li>
+                                <hr>
+                                <li>
+                                    <label>Image Size:</label>
+                                    <div class="divid menu-item dd " style="display: flex; margin-top: 10px;">
+                                        <div>
+                                            <label>Width</label><input
+                                                style="margin-top: 5px;margin-bottom: 10px; margin-right: 10px; line-height: .5;"
+                                                class="form-control menu-item dd widthtxt" type="text">
+                                        </div>
+                                        <div>
+                                            <label>Height</label> <input
+                                                style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                                class="form-control menu-item dd heighttxt" type="text">
+                                        </div>
+                                        <div style="width: 55px">
+                                            <label></label>
+                                            <button class="button-3" onclick="imagesize(event);"
+                                                role="button">Go</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Delete:</label>
+                                    <div class="divid menu-item dd">
+                                        <button class="button-3 " onclick='deleteatter(event)'
+                                            role="button">Delete</button>
+                                    </div>
+                                </li>
+                                <br />
+                                <li>
+                                    <label>Icons:</label>
+                                    <div class="divid menu-item" style="display:flex">
+                                        <a data-menu="5" class="menu-anchor onclickbtn"
+                                            style=" width: 100%; font-weight:medium;">
+                                            <i style="margin-right:10px ;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                    fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
+                                                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                                    <path
+                                                        d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z" />
+                                                </svg>
+                                            </i>Select Icons
+                                        </a>
+                                        <svg class="spt" xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
+                                            width="10px" height="10px" viewBox="0 0 451.846 451.847"
+                                            style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve">
+                                            <g>
+                                                <path
+                                                    d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z">
+                                                </path>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                            <g>
+                                            </g>
+                                        </svg>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="divid submenu menu" data-menu="5" style="position:absolute">
+                        <div class="divid submenu-back">
+                            <div class="divid menu-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" x="0px" y="0px" width="10px" height="10px"
+                                    viewBox="0 0 451.847 451.847" style="enable-background:new 0 0 451.847 451.847;"
+                                    xml:space="preserve" class="spt">
+                                    <g>
+                                        <path
+                                            d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0   c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744   c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z">
+                                        </path>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                    <g>
+                                    </g>
+                                </svg>
+                                <a href="#" class="menu-back onclickbtn">BACK</a>
+                            </div>
+                        </div>
+
+                        <div class="iconchange divid">
+                            <i class="fa fa-audio-description iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-address-book iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-address-book-o iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-address-card iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-address-card-o iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-adjust iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-american-sign-language-interpreting iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-anchor iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-archive iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-area-chart iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-arrows iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-arrows-h iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-arrows-v iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-asl-interpreting iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-assistive-listening-systems iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-asterisk iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-at iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-automobile iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-balance-scale iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-ban iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bank iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bar-chart iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bar-chart-o iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-barcode iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bars iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bath iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bathtub iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-0 iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-1 iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-2 iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-3 iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-4 iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-empty iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-full iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-half iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-quarter iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-three-quarters iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bed iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-beer iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bell iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bell-o iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bell-slash iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bell-slash-o iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bicycle iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-binoculars iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-birthday-cake iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-blind iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bolt iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bomb iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-book iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bookmark iconupdate" aria-hidden="true"></i>
+                        </div>
+                        <hr />
+                        <div class="divid" style="padding:10px">
+                            <label>Change Icons:</label>
+                            <div class="divid  dd col-lg-12" style="display: flex;  padding: 0px;">
+                                <div class="divid col-4" style="padding-left: 0px; padding-right: 0px;">
+                                    <label class="dd"
+                                        style="margin-bottom: 15px;text-align: center;margin-left: auto;margin-right: auto;padding-right: 0px;">Selected
+                                        Icon:</label>
+                                    <div class="divid ccol"
+                                        style="margin-left: auto;margin-right: auto;text-align: center;justify-content: center;">
+                                        <i id="cicon2" class="fa fa-bookmark iconsize"
+                                            style="color: black!important;margin-left: auto;margin-right: auto;text-align: center !important;font-size: x-large;"></i>
+                                    </div>
+                                </div>
+                                <div class="divid col-4 ccol"
+                                    style="margin-left: auto;margin-right: auto;text-align: center;justify-content: center;">
+                                    <br />
+                                    <br />
+                                    <div class="divid ccol mt-3"
+                                        style="margin-left: auto;margin-right: auto;text-align: center;justify-content: center;">
+                                        <i class="fa fa-exchange mt-2"
+                                            style="color: black!important;margin-left: auto;margin-right: auto;text-align: center !important;font-size: x-large;"></i>
+                                    </div>
+                                </div>
+                                <div class="divid col-4 ccol" style="padding-left: 0px;padding-right: 0px;">
+                                    <label class="dd"
+                                        style="margin-bottom:15px;text-align:center;padding-right: 0px;margin-left: auto;margin-right: auto;">Change
+                                        Icon:</label>
+                                    <div class="divid ccol"
+                                        style="margin-left: auto;margin-right: auto;text-align: center;justify-content: center;">
+                                        <i id="cicon1" class="fa fa-bookmark iconsize"
+                                            style="color: black!important;margin-left: auto;margin-right: auto;text-align: center !important;font-size: x-large;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                            <a class="btn btn-success col-12 onclickbtn iconidupdate"
+                                onclick="IconUpdate(id)">Update</a>
+                            <div class="mt-3" style="display: flex; ">
+                                <a class="btn btn-danger col-12 onclickbtn iconidupdate "
+                                    onclick="IconDelete(id)">Delete</a>
+                            </div>
+
+                        </div>
+
+                        <hr />
+                        <div class="divid" style="padding:10px">
+                            <label><b>Icons Size:</b></label>
+                            <br />
+                            <div class="divid  dd col-lg-12" style="display: flex;  padding: 0px;">
+                                <div class="divid col-6" style="padding-left: 0px; padding-right: 0px;">
+                                    <input type="text" id="Iconsizeinput" class="form-control" />
+                                </div>
+                                <div class="divid col-2" style="padding-left: 0px; padding-right: 0px;">
+                                    <label>px</label>
+                                </div>
+                                <div class="divid col-4" style="padding-left: 0px; padding-right: 0px;">
+                                    <a class="button-3 onclickbtn iconidupdate keepiconid" onclick="IconsizeUpdate(id)"
+                                        style="margin:0px">Ok</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="divid clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="conteudo">
+        <div class="divid conteudo-inner">
+            <div id="div-id-1" class="conteudo-wrapper">
+                <!-- html page render -->
+                <input type="hidden" id="themename" value="@ViewBag.Themename" />
+
+                <!DOCTYPE html>
+                <html lang="en">
+
+                <head>
+                    <meta charset="utf-8">
+                    <title>Demo Site</title>
+                    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+                    <meta content="Free HTML Templates" name="keywords">
+                    <meta content="Free HTML Templates" name="description">
+
+                    <!-- Favicon -->
+                    <link href="./img/favicon.ico" rel="icon">
+
+                    <!-- Google Web Fonts -->
+                    <link rel="preconnect" href="https://fonts.gstatic.com">
+                    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+                        rel="stylesheet">
+
+                    <!-- Font Awesome -->
+                    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css"
+                        rel="stylesheet">
+
+                    <!-- Libraries Stylesheet -->
+                    <link href="/css/style.css" rel="stylesheet" />
+                </head>
+
+                <body>
+                    <!-- Topbar Start -->
+                    <div id="asdf" class="container-fluid bg-light pt-3 d-none d-lg-block">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                                    <div class="d-inline-flex align-items-center">
+
+                                        <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                                        <p class=" text-body px-3">|</p>
+                                        <p><i class="fa fa-phone-alt mr-2"></i>+012 345 6789</p>
+
+
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 text-center text-lg-right">
+                                    <div class="d-inline-flex align-items-center">
+
+                                        <a class=" text-primary px-3">
+                                            <i class="fab fa-facebook-f"></i>
+                                        </a>
+                                        <a class=" text-primary px-3">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a class=" text-primary px-3">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a class=" text-primary px-3">
+                                            <i class="fab fa-instagram"></i>
+                                        </a>
+                                        <a class=" text-primary pl-3">
+                                            <i class="fab fa-youtube"></i>
+                                        </a>
+
+
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Topbar End -->
+                    <!-- Navbar Start -->
+                    <div class="container-fluid position-relative nav-bar p-0">
+                        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+                            <nav
+                                class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                                <div class=" navbar-brand">
+
+                                    <h1 class=" m-0 text-primary"><span class=" text-dark">TRAVEL</span>ER
+                                    </h1>
+
+                                </div>
+                                <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                    data-target="#navbarCollapse">
+                                    <span class=" navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                                    <div class="navbar-nav ml-auto py-0">
+                                        <a href="/Index.html" class="nav-item nav-link">Home</a>                                       
+                                    </div>
+                                </div>
+                            </nav>
+                        </div>
+                    </div>
+                    <!-- Navbar End -->
+
+                    <input type="hidden" id="Iconcolorval" value="" />
+                    <input type="hidden" id="Bodycolorval" value="" />
+                    <link href="/css/imgbtn.css" rel="stylesheet" />
+
+                    <div class="container-fluid p-0">
+                        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img class="w-100" id="imgchange" style="height:600px" src="./img/carousel-1.jpg"
+                                        alt="Image">
+                                    <div
+                                        class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                        <div class="p-3" style="max-width: 900px;">
+                                            <h4 contenteditable="true" id="contentR" style="color:white"
+                                                class=" text-uppercase mb-md-3">Tours & Travel</h4>
+                                            <h1 contenteditable="true" id="contentR" class="display-3  mb-md-4"
+                                                style="color:white">
+                                                Let's Discover The World Together</h1>
+                                            <a contenteditable="true" id="btnid" onclick="dom(id)" href="#*"
+                                                class="lin2 rmedit btn btn-primary py-md-3 px-md-5 mt-2 rmedit">Book
+                                                Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="edit-icon" style="height:20px;width:20px">
+                                        <input type="file" id="imgchangebtn" onchange="Testing(id)">
+                                        <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img class="w-100" id="imgchange" style="height:600px" src="./img/carousel-2.jpg"
+                                        alt="Image">
+                                    <div
+                                        class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                                        <div class="p-3" style="max-width: 900px;">
+                                            <h4 contenteditable="true" id="contentR" style="color:white"
+                                                class=" text-uppercase mb-md-3">Tours & Travel</h4>
+                                            <h1 contenteditable="true" id="contentR" class="display-3  mb-md-4"
+                                                style="color:white">
+                                                Discover Amazing Places With Us</h1>
+                                            <a contenteditable="true" id="btnid" onclick="dom(id)" href="#*"
+                                                class="lin3 rmedit btn btn-primary py-md-3 px-md-5 mt-2">Book Now</a>
+                                        </div>
+                                    </div>
+                                    <div class="edit-icon" style="height:20px;width:20px">
+                                        <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                        <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                    </div>
+                                </div>
+                            </div>
+
+                            <a class="carousel-control-prev onclickbtn" href="#header-carousel" data-slide="prev">
+                                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                                    <span class="carousel-control-prev-icon mb-n2"></span>
+                                </div>
+                            </a>
+                            <a class="carousel-control-next onclickbtn" href="#header-carousel" data-slide="next">
+                                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                                    <span class="carousel-control-next-icon mb-n2"></span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+
+                    <div class="container-fluid py-5">
+                        <div class="container pt-5">
+                            <div class="row">
+                                <div class="col-lg-6" style="min-height: 500px;">
+                                    <div class="position-relative h-100">
+                                        <img class="position-absolute w-100 h-100" id="imgchange" src="./img/about.jpg"
+                                            style="object-fit: cover;">
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 pt-5 pb-lg-5">
+                                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                                        <h6 contenteditable="true" id="contentR" class=" text-uppercase"
+                                            style="letter-spacing: 5px;">
+                                            About Us</h6>
+                                        <h1 contenteditable="true" id="contentR" class="mb-3">We Provide Best Tour
+                                            Packages In Your
+                                            Budget</h1>
+                                        <p contenteditable="true" id="contentR">Dolores lorem lorem ipsum sit et ipsum.
+                                            Sadip sea amet
+                                            diam dolore sed et. Sit rebum labore sit sit ut vero no sit. Et elitr stet
+                                            dolor sed sit et
+                                            sed ipsum et kasd ut. Erat duo eos et erat sed diam duo</p>
+                                        <div class="row mb-4">
+                                            <div class="col-6">
+                                                <img class="img-fluid" id="imgchange" src="./img/about-1.jpg"
+                                                    style="height: 150px; width: 250px" alt="">
+                                                <div class="edit-icon" style="height:20px;width:20px">
+                                                    <input type="file" id="imgchangebtn" onchange="Testing(id)"
+                                                        class="tlink">
+                                                    <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <img class="img-fluid" id="imgchange" src="./img/about-2.jpg"
+                                                    style="height: 150px; width:250px" alt="">
+                                                <div class="edit-icon" style="height:20px;width:20px">
+                                                    <input type="file" id="imgchangebtn" onchange="Testing(id)"
+                                                        class="tlink">
+                                                    <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <a id="btnid" onclick="dom(id)" href="#*"
+                                            class="lin555 rmedit btn btn-primary mt-1">Book
+                                            Now</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid pb-5">
+                        <div class="container pb-5">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="d-flex mb-4 mb-lg-0">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3"
+                                            style="height: 100px; width: 100px;">
+                                            <img id="imgchange"
+                                                src="https://media.flaticon.com/dist/min/img/collections/collection-tour.svg"
+                                                style="width:40px;height:40px" />
+                                            <div class="edit-icon" style="height:20px;width:20px">
+                                                <input type="file" id="imgchangebtn" onchange="Testing(id)"
+                                                    class="tlink">
+                                                <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <h5 contenteditable="true" id="contentR" class="">Competitive Pricing</h5>
+                                            <p contenteditable="true" id="contentR" class="m-0">Magna sit magna dolor
+                                                duo dolor labore
+                                                rebum amet elitr est diam sea</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-flex mb-4 mb-lg-0">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3"
+                                            style="height: 100px; width: 100px;">
+                                            <img id="imgchange"
+                                                src="https://media.flaticon.com/dist/min/img/collections/collection-tour.svg"
+                                                style="width:40px;height:40px" />
+                                            <div class="edit-icon" style="height:20px;width:20px">
+                                                <input type="file" id="imgchangebtn" onchange="Testing(id)"
+                                                    class="tlink">
+                                                <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <h5 contenteditable="true" id="contentR" class="">Best Services</h5>
+                                            <p contenteditable="true" id="contentR" class="m-0">Magna sit magna dolor
+                                                duo dolor labore
+                                                rebum amet elitr est diam sea</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="d-flex mb-4 mb-lg-0">
+                                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3"
+                                            style="height: 100px; width: 100px;">
+                                            <img id="imgchange"
+                                                src="https://media.flaticon.com/dist/min/img/collections/collection-tour.svg"
+                                                style="width:40px;height:40px" />
+                                            <div class="edit-icon" style="height:20px;width:20px">
+                                                <input type="file" id="imgchangebtn" onchange="Testing(id)"
+                                                    class="tlink">
+                                                <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <h5 contenteditable="true" id="contentR" class="">Worldwide Coverage</h5>
+                                            <p contenteditable="true" id="contentR" class="m-0">Magna sit magna dolor
+                                                duo dolor labore
+                                                rebum amet elitr est diam sea</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid py-5">
+                        <div class="container pt-5 pb-3">
+                            <div class="text-center mb-3 pb-3">
+                                <h6 contenteditable="true" id="contentR" class=" text-uppercase"
+                                    style="letter-spacing: 5px;">
+                                    Destination</h6>
+                                <h1 contenteditable="true" id="contentR">Explore Top Destination</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="destination-item position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid" id="imgchange" style="height: 200px; width: 350px;"
+                                            src="./img/destination-1.jpg" alt="">
+                                        <div class="destination-overlay  text-decoration-none">
+                                            <h5 contenteditable="true" id="contentR" style="color:white" class="">United
+                                                States</h5>
+                                            <span contenteditable="true" id="contentR">100 Cities</span>
+                                            <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                style="z-index:-2;" class="lin6 rmedit destination-overlay">
+                                            </a>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="destination-item position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid" id="imgchange" style="height: 200px; width: 350px;"
+                                            src="./img/destination-2.jpg" alt="">
+                                        <div class="destination-overlay  text-decoration-none">
+                                            <h5 contenteditable="true" id="contentR" style="color:white" class="">United
+                                                States</h5>
+                                            <span contenteditable="true" id="contentR">100 Cities</span>
+                                            <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                style="z-index:-2;" class="lin8 rmedit destination-overlay">
+                                            </a>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="destination-item position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid" id="imgchange" style="height: 200px; width: 350px;"
+                                            src="./img/destination-3.jpg" alt="">
+                                        <div class="destination-overlay  text-decoration-none">
+                                            <h5 contenteditable="true" id="contentR" style="color:white" class="">United
+                                                States</h5>
+                                            <span contenteditable="true" id="contentR">100 Cities</span>
+                                            <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                style="z-index:-2;" class="lin9 rmedit destination-overlay">
+                                            </a>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="destination-item position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid" id="imgchange" style="height: 200px; width: 350px;"
+                                            src="./img/destination-4.jpg" alt="">
+                                        <div class="destination-overlay  text-decoration-none">
+                                            <h5 contenteditable="true" id="contentR" style="color:white" class="">United
+                                                States</h5>
+                                            <span contenteditable="true" id="contentR">100 Cities</span>
+                                            <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                style="z-index:-2;" class="lin10 rmedit destination-overlay">
+                                            </a>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="destination-item position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid" id="imgchange" style="height: 200px; width: 350px;"
+                                            src="./img/destination-5.jpg" alt="">
+                                        <div class="destination-overlay  text-decoration-none">
+                                            <h5 contenteditable="true" id="contentR" style="color:white" class="">United
+                                                States</h5>
+                                            <span contenteditable="true" id="contentR">100 Cities</span>
+                                            <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                style="z-index:-2;" class="lin11 rmedit destination-overlay">
+                                            </a>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="destination-item position-relative overflow-hidden mb-2">
+                                        <img class="img-fluid" id="imgchange" style="height: 200px; width: 350px;"
+                                            src="./img/destination-6.jpg" alt="">
+                                        <div class="destination-overlay  text-decoration-none">
+                                            <h5 contenteditable="true" id="contentR" style="color:white" class="">United
+                                                States</h5>
+                                            <span contenteditable="true" id="contentR">100 Cities</span>
+                                            <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                style="z-index:-2;" class="lin12 rmedit destination-overlay">
+                                            </a>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid py-5">
+                        <div class="container pt-5 pb-3">
+                            <div class="text-center mb-3 pb-3">
+                                <h6 contenteditable="true" id="contentR" class=" text-uppercase"
+                                    style="letter-spacing: 5px;color: #7AB730">Services</h6>
+                                <h1 contenteditable="true" id="contentR">Tours & Travel Services</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                                        <img id="imgchange"
+                                            src="https://media.flaticon.com/dist/min/img/collections/collection-tour.svg"
+                                            style="width:75px;height:75px" />
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                        <h5 contenteditable="true" id="contentR" class="mb-2">Travel Guide</h5>
+                                        <p contenteditable="true" id="contentR" class="m-0">Justo sit justo eos amet
+                                            tempor amet clita
+                                            amet ipsum eos elitr. Amet lorem est amet labore</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                                        <img id="imgchange"
+                                            src="https://media.flaticon.com/dist/min/img/collections/collection-tour.svg"
+                                            style="width:75px;height:75px" />
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                        <h5 contenteditable="true" id="contentR" class="mb-2">Ticket Booking</h5>
+                                        <p contenteditable="true" id="contentR" class="m-0">Justo sit justo eos amet
+                                            tempor amet clita
+                                            amet ipsum eos elitr. Amet lorem est amet labore</p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                                        <img id="imgchange"
+                                            src="https://media.flaticon.com/dist/min/img/collections/collection-tour.svg"
+                                            style="width:75px;height:75px" />
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                        <h5 contenteditable="true" id="contentR" class="mb-2">Hotel Booking</h5>
+                                        <p contenteditable="true" id="contentR" class="m-0">Justo sit justo eos amet
+                                            tempor amet clita
+                                            amet ipsum eos elitr. Amet lorem est amet labore</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid py-5">
+                        <div class="container pt-5 pb-3">
+                            <div class="text-center mb-3 pb-3">
+                                <h6 contenteditable="true" id="contentR" class=" text-uppercase"
+                                    style="letter-spacing: 5px;color: #7AB730">Packages</h6>
+                                <h1 contenteditable="true" id="contentR">Pefect Tour Packages</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="package-item bg-white mb-2">
+                                        <img class="img-fluid" id="imgchange" style="height:230px"
+                                            src="./img/package-1.jpg" alt="">
+                                        <div class="p-4">
+                                            <div class="d-flex justify-content-between mb-3">
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-map-marker-alt  mr-2"></i>Thailand</small>
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-calendar-alt  mr-2"></i>3 days</small>
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-user  mr-2"></i>2 Person</small>
+                                            </div>
+                                            <a contenteditable="true" id="btnid" onclick="dom(id)" href="#*"
+                                                class="lin25 rmedit h5 text-decoration-none">Discover amazing places of
+                                                the world with
+                                                us</a>
+                                            <div class="border-top mt-4 pt-4">
+                                                <div class="d-flex justify-content-between">
+                                                    <h6 contenteditable="true" id="contentR" class="m-0"><i
+                                                            class="fa fa-star  mr-2" style="color: #7AB730"></i>4.5
+                                                        <small>(250)</small></h6>
+                                                    <h5 contenteditable="true" id="contentR" class="m-0">$350</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="package-item bg-white mb-2">
+                                        <img class="img-fluid" id="imgchange" style="height:230px"
+                                            src="./img/package-2.jpg" alt="">
+                                        <div class="p-4">
+                                            <div class="d-flex justify-content-between mb-3">
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-map-marker-alt  mr-2"></i>Thailand</small>
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-calendar-alt  mr-2"></i>3 days</small>
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-user  mr-2"></i>2 Person</small>
+                                            </div>
+                                            <a contenteditable="true" id="btnid" onclick="dom(id)" href="#*"
+                                                class="lin26 rmedit h5 text-decoration-none">Discover amazing places of
+                                                the world with
+                                                us</a>
+                                            <div class="border-top mt-4 pt-4">
+                                                <div class="d-flex justify-content-between">
+                                                    <h6 contenteditable="true" id="contentR" class="m-0"><i
+                                                            class="fa fa-star  mr-2" style="color: #7AB730"></i>4.5
+                                                        <small>(250)</small></h6>
+                                                    <h5 contenteditable="true" id="contentR" class="m-0">$350</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="package-item bg-white mb-2">
+                                        <img class="img-fluid" id="imgchange" style="height:230px"
+                                            src="./img/package-3.jpg" alt="">
+                                        <div class="p-4">
+                                            <div class="d-flex justify-content-between mb-3">
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-map-marker-alt  mr-2"></i>Thailand</small>
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-calendar-alt  mr-2"></i>3 days</small>
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-user  mr-2"></i>2 Person</small>
+                                            </div>
+                                            <a contenteditable="true" id="btnid" onclick="dom(id)" href="#*"
+                                                class="lin27 rmedit h5 text-decoration-none" href="">Discover amazing
+                                                places of the
+                                                world with us</a>
+                                            <div class="border-top mt-4 pt-4">
+                                                <div class="d-flex justify-content-between">
+                                                    <h6 contenteditable="true" id="contentR" class="m-0"><i
+                                                            class="fa fa-star  mr-2" style="color: #7AB730"></i>4.5
+                                                        <small>(250)</small></h6>
+                                                    <h5 contenteditable="true" id="contentR" class="m-0">$350</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="package-item bg-white mb-2">
+                                        <img class="img-fluid" id="imgchange" style="height:230px"
+                                            src="./img/package-4.jpg" alt="">
+                                        <div class="p-4">
+                                            <div class="d-flex justify-content-between mb-3">
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-map-marker-alt  mr-2"></i>Thailand</small>
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-calendar-alt  mr-2"></i>3 days</small>
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-user  mr-2"></i>2 Person</small>
+                                            </div>
+                                            <a contenteditable="true" id="btnid" onclick="dom(id)" href="#*"
+                                                class="lin28 rmedit h5 text-decoration-none" href="">Discover amazing
+                                                places of the
+                                                world with us</a>
+                                            <div class="border-top mt-4 pt-4">
+                                                <div class="d-flex justify-content-between">
+                                                    <h6 contenteditable="true" id="contentR" class="m-0"><i
+                                                            class="fa fa-star  mr-2"></i>4.5 <small>(250)</small></h6>
+                                                    <h5 contenteditable="true" id="contentR" class="m-0">$350</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="package-item bg-white mb-2">
+                                        <img class="img-fluid" id="imgchange" style="height:230px"
+                                            src="./img/package-5.jpg" alt="">
+                                        <div class="p-4">
+                                            <div class="d-flex justify-content-between mb-3">
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-map-marker-alt  mr-2"></i>Thailand</small>
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-calendar-alt  mr-2"></i>3 days</small>
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-user  mr-2"></i>2 Person</small>
+                                            </div>
+                                            <a contenteditable="true" id="btnid" onclick="dom(id)" href="#*"
+                                                class="lin29 rmedit h5 text-decoration-none" href="">Discover amazing
+                                                places of the
+                                                world with us</a>
+                                            <div class="border-top mt-4 pt-4">
+                                                <div class="d-flex justify-content-between">
+                                                    <h6 contenteditable="true" id="contentR" class="m-0"><i
+                                                            class="fa fa-star  mr-2" style="color: #7AB730"></i>4.5
+                                                        <small>(250)</small></h6>
+                                                    <h5 contenteditable="true" id="contentR" class="m-0">$350</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4">
+                                    <div class="package-item bg-white mb-2">
+                                        <img class="img-fluid" id="imgchange" style="height:230px"
+                                            src="./img/package-6.jpg" alt="">
+                                        <div class="p-4">
+                                            <div class="d-flex justify-content-between mb-3">
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-map-marker-alt  mr-2"></i>Thailand</small>
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-calendar-alt  mr-2"></i>3 days</small>
+                                                <small contenteditable="true" id="contentR" class="m-0"><i
+                                                        class="fa fa-user  mr-2"></i>2 Person</small>
+                                            </div>
+                                            <a contenteditable="true" id="btnid" onclick="dom(id)" href="#*"
+                                                class="lin30 rmedit h5 text-decoration-none">Discover amazing places of
+                                                the world with
+                                                us</a>
+                                            <div class="border-top mt-4 pt-4">
+                                                <div class="d-flex justify-content-between">
+                                                    <h6 contenteditable="true" id="contentR" class="m-0"><i
+                                                            class="fa fa-star  mr-2"></i>4.5 <small>(250)</small></h6>
+                                                    <h5 contenteditable="true" id="contentR" class="m-0">$350</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="bg-page03" class="container-fluid bg-registration  py-5" style="margin: 90px 0;">
+                        <div class="container py-5">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7 mb-5 mb-lg-0">
+                                    <div class="mb-4">
+                                        <h6 contenteditable="true" id="contentR" class=" text-uppercase"
+                                            style="letter-spacing: 5px; color: #7AB730">Mega Offer</h6>
+                                        <h1 contenteditable="true" id="contentR" style="color:white" class=""><span
+                                                contenteditable="true" id="contentR" class="" style="color: #7AB730">30%
+                                                OFF</span> For
+                                            Honeymoon</h1>
+                                    </div>
+                                    <p contenteditable="true" id="contentR" style="color:white" class="">
+                                        Invidunt lorem justo sanctus clita. Erat lorem labore ea, justo dolor lorem
+                                        ipsum ut sed eos,
+                                        ipsum et dolor kasd sit ea justo. Erat justo sed sed diam. Ea et erat ut sed
+                                        diam sea ipsum est
+                                        dolor
+                                    </p>
+                                    <ul class="list-inline  m-0">
+                                        <li contenteditable="true" id="contentR" class="py-2"><i
+                                                class="fa fa-check  mr-3"></i>Labore
+                                            eos amet dolor amet diam</li>
+                                        <li contenteditable="true" id="contentR" class="py-2"><i
+                                                class="fa fa-check  mr-3"></i>Etsea et
+                                            sit dolor amet ipsum</li>
+                                        <li contenteditable="true" id="contentR" class="py-2"><i
+                                                class="fa fa-check  mr-3"></i>Diam
+                                            dolor diam elitripsum vero.</li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="edit-icon" style="height:20px;width:20px">
+                            <input type="file" id="03" onchange="bgtest(id)">
+                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                        </div>
+                    </div>
+
+                    <div class="container-fluid py-5">
+                        <div class="container pt-5 pb-3">
+                            <div class="text-center mb-3 pb-3">
+                                <h6 contenteditable="true" id="contentR" class=" text-uppercase"
+                                    style="letter-spacing: 5px;color: #7AB730">Guides</h6>
+                                <h1 contenteditable="true" id="contentR">Our Travel Guides</h1>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
+                                    <div class="team-item bg-white mb-4">
+                                        <div class="team-img position-relative overflow-hidden">
+                                            <img class="img-fluid w-100" id="imgchange" style="height:250px"
+                                                src="./img/team-1.jpg" alt="">
+                                            <div class="team-social">
+                                                <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                    class="lin31 rmedit btn btn-outline-primary btn-square"><i
+                                                        class="fab fa-twitter"></i></a>
+                                                <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                    class="lin32 rmedit btn btn-outline-primary btn-square"><i
+                                                        class="fab fa-facebook-f"></i></a>
+                                                <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                    class="lin33 rmedit btn btn-outline-primary btn-square"><i
+                                                        class="fab fa-instagram"></i></a>
+                                                <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                    class="lin34 rmedit btn btn-outline-primary btn-square"><i
+                                                        class="fab fa-linkedin-in"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center py-4">
+                                            <h5 contenteditable="true" id="contentR" class="text-truncate">Guide Name
+                                            </h5>
+                                            <p contenteditable="true" id="contentR" class="m-0">Designation</p>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
+                                    <div class="team-item bg-white mb-4">
+                                        <div class="team-img position-relative overflow-hidden">
+                                            <img class="img-fluid w-100" id="imgchange" style="height:250px"
+                                                src="./img/team-2.jpg" alt="">
+                                            <div class="team-social">
+                                                <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                    class="lin35 rmedit btn btn-outline-primary btn-square"><i
+                                                        class="fab fa-twitter"></i></a>
+                                                <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                    class="lin36 rmedit btn btn-outline-primary btn-square"><i
+                                                        class="fab fa-facebook-f"></i></a>
+                                                <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                    class="lin37 rmedit btn btn-outline-primary btn-square"><i
+                                                        class="fab fa-instagram"></i></a>
+                                                <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                    class="lin38 rmedit btn btn-outline-primary btn-square"><i
+                                                        class="fab fa-linkedin-in"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center py-4">
+                                            <h5 contenteditable="true" id="contentR" class="text-truncate">Guide Name
+                                            </h5>
+                                            <p contenteditable="true" id="contentR" class="m-0">Designation</p>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
+                                    <div class="team-item bg-white mb-4">
+                                        <div class="team-img position-relative overflow-hidden">
+                                            <img class="img-fluid w-100" id="imgchange" style="height:250px"
+                                                src="./img/team-3.jpg" alt="">
+                                            <div class="team-social">
+                                                <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                    class="lin39 rmedit btn btn-outline-primary btn-square"><i
+                                                        class="fab fa-twitter"></i></a>
+                                                <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                    class="lin40 rmedit btn btn-outline-primary btn-square"><i
+                                                        class="fab fa-facebook-f"></i></a>
+                                                <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                    class="lin41 rmedit btn btn-outline-primary btn-square"><i
+                                                        class="fab fa-instagram"></i></a>
+                                                <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                    class="lin42 rmedit btn btn-outline-primary btn-square"><i
+                                                        class="fab fa-linkedin-in"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center py-4">
+                                            <h5 contenteditable="true" id="contentR" class="text-truncate">Guide Name
+                                            </h5>
+                                            <p contenteditable="true" id="contentR" class="m-0">Designation</p>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-sm-6 pb-2">
+                                    <div class="team-item bg-white mb-4">
+                                        <div class="team-img position-relative overflow-hidden">
+                                            <img class="img-fluid w-100" id="imgchange" style="height:250px"
+                                                src="./img/team-4.jpg" alt="">
+                                            <div class="team-social">
+                                                <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                    class="lin43 rmedit btn btn-outline-primary btn-square"><i
+                                                        class="fab fa-twitter"></i></a>
+                                                <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                    class="lin44 rmedit btn btn-outline-primary btn-square"><i
+                                                        class="fab fa-facebook-f"></i></a>
+                                                <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                    class="lin45 rmedit btn btn-outline-primary btn-square"><i
+                                                        class="fab fa-instagram"></i></a>
+                                                <a contenteditable="true" id="btnid" onclick="dom1(id)" href="#*"
+                                                    class="lin46 rmedit btn btn-outline-primary btn-square"><i
+                                                        class="fab fa-linkedin-in"></i></a>
+                                            </div>
+                                        </div>
+                                        <div class="text-center py-4">
+                                            <h5 contenteditable="true" id="contentR" class="text-truncate">Guide Name
+                                            </h5>
+                                            <p contenteditable="true" id="contentR" class="m-0">Designation</p>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="container-fluid py-5">
+                        <div class="container pt-5 pb-3">
+                            <div class="text-center mb-3 pb-3">
+                                <h6 contenteditable="true" id="contentR" class=" text-uppercase"
+                                    style="letter-spacing: 5px;color: #7AB730">Our Blog</h6>
+                                <h1 contenteditable="true" id="contentR">Latest From Our Blog</h1>
+                            </div>
+                            <div class="row pb-3">
+                                <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                                    <div class="blog-item">
+                                        <div class="position-relative">
+                                            <img class="img-fluid w-100" id="imgchange" style="height:230px"
+                                                src="./img/blog-1.jpg" alt="">
+                                            <div class="blog-date">
+                                                <h6 contenteditable="true" id="contentR" class="font-weight-bold mb-n1">
+                                                    01</h6>
+                                                <small contenteditable="true" id="contentR" style="color:white"
+                                                    class=" text-uppercase">Jan</small>
+                                            </div>
+                                        </div>
+                                        <div class="bg-white p-4">
+                                            <div class="d-flex mb-2">
+                                                <a contenteditable="true" id="btnid" onclick="dom(id)" href="#*"
+                                                    class="lin47 rmedit  text-uppercase text-decoration-none"
+                                                    style="color: #7AB730">Admin</a>
+                                                <span contenteditable="true" id="contentR" class=" px-2"
+                                                    style="color: #7AB730">|</span>
+                                                <a contenteditable="true" id="btnid" onclick="dom(id)" href="#*"
+                                                    class="lin48 rmedit  text-uppercase text-decoration-none"
+                                                    style="color: #7AB730">Tours & Travel</a>
+                                            </div>
+                                            <a contenteditable="true" id="btnid" onclick="dom(id)" href="#*"
+                                                class="lin49 rmedit h5 m-0 text-decoration-none" href="">Dolor justo sea
+                                                kasd lorem
+                                                clita justo diam amet</a>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                                    <div class="blog-item">
+                                        <div class="position-relative">
+                                            <img class="img-fluid w-100" id="imgchange" style="height:230px"
+                                                src="./img/blog-2.jpg" alt="">
+                                            <div class="blog-date">
+                                                <h6 contenteditable="true" id="contentR" class="font-weight-bold mb-n1">
+                                                    01</h6>
+                                                <small contenteditable="true" id="contentR" style="color:white"
+                                                    class=" text-uppercase">Jan</small>
+                                            </div>
+                                        </div>
+                                        <div class="bg-white p-4">
+                                            <div class="d-flex mb-2">
+                                                <a contenteditable="true" id="btnid" onclick="dom(id)" href="#*"
+                                                    class="lin50 rmedit  text-uppercase text-decoration-none"
+                                                    style="color: #7AB730">Admin</a>
+                                                <span contenteditable="true" id="contentR" class=" px-2"
+                                                    style="color: #7AB730">|</span>
+                                                <a contenteditable="true" id="btnid" onclick="dom(id)" href="#*"
+                                                    class="lin51 rmedit  text-uppercase text-decoration-none"
+                                                    style="color: #7AB730">Tours & Travel</a>
+                                            </div>
+                                            <a contenteditable="true" id="btnid" onclick="dom(id)" href="#*"
+                                                class="lin52 rmedit h5 m-0 text-decoration-none" href="">Dolor justo sea
+                                                kasd lorem
+                                                clita justo diam amet</a>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                                    <div class="blog-item">
+                                        <div class="position-relative">
+                                            <img class="img-fluid w-100" id="imgchange" style="height:230px"
+                                                src="./img/blog-3.jpg" alt="">
+                                            <div class="blog-date">
+                                                <h6 contenteditable="true" id="contentR" class="font-weight-bold mb-n1">
+                                                    01</h6>
+                                                <small contenteditable="true" id="contentR" style="color:white"
+                                                    class=" text-uppercase">Jan</small>
+                                            </div>
+                                        </div>
+                                        <div class="bg-white p-4">
+                                            <div class="d-flex mb-2">
+                                                <a contenteditable="true" id="btnid" onclick="dom(id)" href="#*"
+                                                    class="lin53 rmedit  text-uppercase text-decoration-none"
+                                                    style="color: #7AB730">Admin</a>
+                                                <span contenteditable="true" id="contentR" class=" px-2"
+                                                    style="color: #7AB730">|</span>
+                                                <a contenteditable="true" id="btnid" onclick="dom(id)" href="#*"
+                                                    class="lin54 rmedit  text-uppercase text-decoration-none"
+                                                    style="color: #7AB730">Tours & Travel</a>
+                                            </div>
+                                            <a contenteditable="true" id="btnid" onclick="dom(id)" href="#*"
+                                                class="lin55 rmedit h5 m-0 text-decoration-none">Dolor justo sea kasd
+                                                lorem clita justo
+                                                diam amet</a>
+                                        </div>
+                                        <div class="edit-icon" style="height:20px;width:20px">
+                                            <input type="file" id="imgchangebtn" onchange="Testing(id)" class="tlink">
+                                            <img src="/img/imglogo.png" style="width: 20px;height: 20px;" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer Start -->
+                    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+                        <div class="row pt-5">
+                            <div class="col-lg-6 col-md-12 mb-5">
+
+                                <a class=" navbar-brand">
+                                    <h1 class=" text-primary"><span class=" text-white">TRAVEL</span>ER</h1>
+                                </a>
+
+                                <h6 class=" text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Follow Us
+                                </h6>
+                                <div class="d-flex justify-content-start">
+
+                                    <a class=" btn btn-outline-primary btn-square mr-2"><i
+                                            class="fab fa-twitter"></i></a>
+                                    <a class=" btn btn-outline-primary btn-square mr-2"><i
+                                            class="fab fa-facebook-f"></i></a>
+                                    <a class=" btn btn-outline-primary btn-square mr-2"><i
+                                            class="fab fa-linkedin-in"></i></a>
+                                    <a class=" btn btn-outline-primary btn-square mr-2"><i
+                                            class="fab fa-instagram"></i></a>
+                                    <a class=" btn btn-outline-primary btn-square"><i class="fab fa-youtube"></i></a>
+
+
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-12 mb-5">
+                                <h5 class=" text-white text-uppercase mb-4" style="letter-spacing: 5px;">
+                                    Contact Us</h5>
+
+                                <p><i class="fa fa-map-marker-alt mr-2"></i>123 Street, New York,
+                                    USA</p>
+                                <p><i class="fa fa-phone-alt mr-2"></i>+012 345 67890</p>
+                                <p><i class="fa fa-envelope mr-2"></i>info@example.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
+                        style="border-color: rgba(256, 256, 256, .1) !important;">
+                        <div class="row">
+                            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                                <p class="onclickbtn m-0 text-white-50">
+                                    Copyright &copy; <a href="https://lokendra.co" class="onclickbtn ">Lokendra.co</a>.
+                                    All Rights Reserved.</a>
+                                </p>
+                            </div>
+                            <div class="col-lg-6 text-center text-md-right">
+                                <p class="onclickbtn m-0 text-white-50">
+                                    Designed by <a href="https://github.com/volvein" class="onclickbtn ">Lokendra</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Footer End -->
+                    <!-- Back to Top -->
+                    <a href="#asdf" class="onclickbtn btn btn-lg btn-primary btn-lg-square back-to-top"><i
+                            class="fa fa-angle-double-up"></i></a>
+                    <!-- JavaScript Libraries -->
+                    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+                    <script
+                        src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+
+                </body>
+
+                </html>
+
+            </div>
+        </div>
+    </div>
+    <style>
+        .button1 {
+            display: inline-flex !important;
+            align-items: center !important;
+            border: 0 !important;
+            padding: 0.375em 0.75em !important;
+            border-radius: 4px !important;
+            background-color: transparent !important;
+            cursor: pointer !important;
+            border-bottom: 1px solid !important;
+            margin-right: 0.5rem !important;
+            transition: 0.25s ease !important;
+            font-weight: 500 !important;
+        }
+
+        .button1 svg {
+            margin-right: 0.375em;
+            width: 1.25em;
+            height: 1.25em;
+        }
+
+        .button1--save {
+            background-color: #e0e4fa;
+            color: #2f47be;
+        }
+
+        .button1--save:hover {
+            color: #e0e4fa;
+            background-color: #2f47be;
+        }
+
+        .button1--schedule {
+            background-color: #ece0fa;
+            color: #722fbe;
+        }
+
+        .button1--schedule:hover {
+            color: #ece0fa;
+            background-color: #722fbe;
+        }
+
+        .button1--publish {
+            background-color: #8ae2b6 !important;
+            color: #22744b;
+        }
+
+        .button1--publish:hover {
+            color: #8ae2b6;
+            background-color: #22744b !important;
+        }
+
+        .button1--delete {
+            background-color: #fdc8bf;
+            color: #bd1717;
+        }
+
+        .button1--delete:hover {
+            color: #fdc8bf;
+            background-color: #bd1717;
+        }
+    </style>
+    <div class="modal fade" id="domlink" tabindex="-1" aria-labelledby="domlinkLabel" show="true">
+        <div class="divid modal-dialog">
+            <div class="divid modal-content">
+                <div class="divid modal-header">
+                    <h5 class="modal-title onclickbtn" id="domlinkLabel">Edit Button</h5>
+                    <button type="button" id="domlinkclose" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style=" width: 30px; " class="ccx onclickbtn">&times;</span>
+                    </button>
+                </div>
+                <div class="divid modal-body container" style="margin-top: 10px;">
+                    <span id="w" style="color:orangered" class="ccx onclickbtn "></span>
+                    <label for="">Name</label>
+                    <input type="text" style="margin-bottom:1rem" class="form-control" id="dname"
+                        placeholder="Enter Name" required />
+                    <label for="">Link<span class="onclickbtn ccx" style="font-size:12px; padding-left:10px">(Include
+                            Https://...)</span></label>
+                    <input type="text" style="margin-bottom:1rem" class="form-control" id="dlink"
+                        placeholder="https://www.abcd.com" required />
+                    <div class="divid ">
+                        <a contenteditable="false" id="1" onclick="linked1(id)"
+                            class="btn btn-info mt-2 x2 onclickbtn">Submit</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divid modal fade" id="Imglink" tabindex="-1" aria-labelledby="ImglinkLabel" show="true">
+        <div class="divid modal-dialog">
+            <div class="divid modal-content">
+                <div class="divid modal-header">
+                    <h5 class="modal-title ccx onclickbtn" id="ImglinkLabel">Edit Image</h5>
+                    <button type="button" id="Imglinkclose" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="ccx onclickbtn" style=" width: 30px; ">&times;</span>
+                    </button>
+                </div>
+                <div class="divid modal-body">
+                    <span id="w" style="color:orangered" class="onclickbtn"></span>
+                    <label for="">Image Link<span style="font-size:12px; padding-left:10px"
+                            class="ccx onclickbtn">(Include Https://...)</span></label>
+                    <input type="text" style="margin-bottom:1rem" class="form-control" id="dlink1"
+                        placeholder="https://www.abcd.com" required />
+                    <div class="divid ">
+                        <a contenteditable="false" id="1" onclick="linked(id)"
+                            class="btn btn-info mt-2 q2 onclickbtn">Submit</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divid modal fade" id="ErrorMod" tabindex="-1" aria-labelledby="ErrorModal1" show="false">
+        <div class="divid modal-dialog">
+            <div class="divid modal-content">
+                <div class="divid modal-header">
+                    <h5 class="modal-title ccx onclickbtn" id="ErrorModal1">Error</h5>
+                    <button type="button" class="close" id="ErrorModclose" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="ccx onclickbtn">&times;</span>
+                    </button>
+                </div>
+                <div class="divid modal-body">
+                    <div class="divid form-group col-12 ">
+                        <input id="" type="hidden" class="form-control ">
+                        <label for="" class="ccx">This Domain Already Used Theme </label>
+                        <label for="" class="ccx">So Choose Right Theme</label>
+                    </div>
+                    <div class="divid col-12">
+                        <button data-dismiss="modal" aria-label="Close" class="btn btn-success">Ok</button>
+                        <a href="/admin/Index" class="btn btn-outline-danger onclickbtn">Go to Dashboard</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/Js/test1.js"></script>
+    <script src="/Js/colorpicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/Js/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="/Js/test2.js"></script>
+</body>
+
+</html>
