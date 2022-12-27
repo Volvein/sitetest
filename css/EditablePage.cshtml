@@ -1,0 +1,1238 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/Editable/admin.css" rel="stylesheet" />
+    <link href="/css/imgbtn.css" rel="stylesheet" />
+    <title>Sidebar menu</title>
+    <style>
+        .dis {
+            display: none;
+        }
+
+        #header {
+            height: 0px !important;
+        }
+
+        .fa {
+            font-family: 'FontAwesome' !important;
+        }
+
+        .iconupdate {
+            font-size: 30px;
+        }
+
+        .iconchange {
+            padding: 10px;
+        }
+
+        .iconsize {
+            font-size: xxx-large;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="hit-menu" class="col-xs-hide col-sm-hide"></div>
+    <div class="divid menu-mobile-background "></div>
+    <div id="header">
+        <input type="hidden" id="boaderpagecolor" value="" />
+        <div class="divid header-inner">
+            <div class="divid header-topo">
+                <button class="button-menu-mobile ">
+                    <div class="divid box-stripes">
+                        <span class="onclickbtn stripe-top"></span>
+                        <span class="onclickbtn stripe-middle"></span>
+                        <span class="onclickbtn stripe-bottom"></span>
+                    </div>
+                </button>
+                <span class="onclickbtn header-nomeEmpresa header-nomeEmpresa_mobile col-xs-show col-sm-show">Dashboard</span>
+                <a href="#" class="brand-icon onclickbtn">LOGO</a>
+            </div>
+        </div>
+    </div>
+    <div id="menu" class="">
+        <div class="divid menu-header">
+            <span class="onclickbtn shape-remove-shadow_green"></span>
+            <div class="divid header-topo">
+                <div class="divid header-controlMenu  col-sm-hide col-xs-hide">
+                    <span class="onclickbtn header-nomeEmpresa">
+                        <img src="https://ezytm.in/Images/logo.png"
+                             style="height: 35px; width: 100px;" class="onclickbtn">
+                    </span>
+                    <button class="header-controlMenuButton">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
+                             y="0px" width="20px" height="20px" viewBox="0 0 408 408" style="enable-background:new 0 0 408 408;"
+                             xml:space="preserve" class="detail convertSvgInline replaced-svg" data-id="61022" data-kw="go10">
+                        <g>
+                        <g id="arrow-back">
+                        <path d="M408,178.5H96.9L239.7,35.7L204,0L0,204l204,204l35.7-35.7L96.9,229.5H408V178.5z"></path>
+                </g>
+              </g>
+                        <g>
+              </g>
+                        <g>
+              </g>
+                        <g>
+              </g>
+                        <g>
+              </g>
+                        <g>
+              </g>
+                        <g>
+              </g>
+                        <g>
+              </g>
+                        <g>
+              </g>
+                        <g>
+              </g>
+                        <g>
+              </g>
+                        <g>
+              </g>
+                        <g>
+              </g>
+                        <g>
+              </g>
+                        <g>
+              </g>
+                        <g>
+              </g>
+            </svg>
+                    </button>
+                    <div class="divid clear"></div>
+                </div>
+            </div>
+
+        </div>
+        <div class="divid menu-box" style=" background-color: antiquewhite; ">
+            <div class="divid menu-wrapper-inner" style="padding-top: 60px;">
+                <div class="divid menu-wrapper">
+                    <div class="divid menu-slider">
+                        <div class="divid menu">
+                            <ul>
+                                <li>
+                                    <div class="divid menu-item">
+                                        <a href="#" class="menu-anchor onclickbtn" data-menu="1">
+                                            <i style="margin-right:10px ;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                     fill="currentColor" class="bi bi-paint-bucket" viewBox="0 0 16 16">
+                                                    <path d="M6.192 2.78c-.458-.677-.927-1.248-1.35-1.643a2.972 2.972 0 0 0-.71-.515c-.217-.104-.56-.205-.882-.02-.367.213-.427.63-.43.896-.003.304.064.664.173 1.044.196.687.556 1.528 1.035 2.402L.752 8.22c-.277.277-.269.656-.218.918.055.283.187.593.36.903.348.627.92 1.361 1.626 2.068.707.707 1.441 1.278 2.068 1.626.31.173.62.305.903.36.262.05.64.059.918-.218l5.615-5.615c.118.257.092.512.05.939-.03.292-.068.665-.073 1.176v.123h.003a1 1 0 0 0 1.993 0H14v-.057a1.01 1.01 0 0 0-.004-.117c-.055-1.25-.7-2.738-1.86-3.494a4.322 4.322 0 0 0-.211-.434c-.349-.626-.92-1.36-1.627-2.067-.707-.707-1.441-1.279-2.068-1.627-.31-.172-.62-.304-.903-.36-.262-.05-.64-.058-.918.219l-.217.216zM4.16 1.867c.381.356.844.922 1.311 1.632l-.704.705c-.382-.727-.66-1.402-.813-1.938a3.283 3.283 0 0 1-.131-.673c.091.061.204.15.337.274zm.394 3.965c.54.852 1.107 1.567 1.607 2.033a.5.5 0 1 0 .682-.732c-.453-.422-1.017-1.136-1.564-2.027l1.088-1.088c.054.12.115.243.183.365.349.627.92 1.361 1.627 2.068.706.707 1.44 1.278 2.068 1.626.122.068.244.13.365.183l-4.861 4.862a.571.571 0 0 1-.068-.01c-.137-.027-.342-.104-.608-.252-.524-.292-1.186-.8-1.846-1.46-.66-.66-1.168-1.32-1.46-1.846-.147-.265-.225-.47-.251-.607a.573.573 0 0 1-.01-.068l3.048-3.047zm2.87-1.935a2.44 2.44 0 0 1-.241-.561c.135.033.324.11.562.241.524.292 1.186.8 1.846 1.46.45.45.83.901 1.118 1.31a3.497 3.497 0 0 0-1.066.091 11.27 11.27 0 0 1-.76-.694c-.66-.66-1.167-1.322-1.458-1.847z" />
+                                                </svg>
+                                            </i>Color
+                                        </a>
+                                        <svg class="spt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                             version="1.1" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 451.846 451.847"
+                                             style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve">
+                                        <g>
+                                        <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z">
+                        </path>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                    </svg>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="divid menu-item">
+                                        <a href="#" class="menu-anchor onclickbtn" data-menu="2">
+                                            <i style="margin-right:10px ;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                                     class="bi bi-file-earmark-font-fill" viewBox="0 0 16 16">
+                                                    <path d="M9.293 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4.707A1 1 0 0 0 13.707 4L10 .293A1 1 0 0 0 9.293 0zM9.5 3.5v-2l3 3h-2a1 1 0 0 1-1-1zM5.057 6h5.886L11 8h-.5c-.18-1.096-.356-1.192-1.694-1.235l-.298-.01v5.09c0 .47.1.582.903.655v.5H6.59v-.5c.799-.073.898-.184.898-.654V6.755l-.293.01C5.856 6.808 5.68 6.905 5.5 8H5l.057-2z" />
+                                                </svg>
+                                            </i>Fonts
+                                        </a>
+                                        <svg class="spt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                             version="1.1" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 451.846 451.847"
+                                             style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve">
+                                        <g>
+                                        <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z">
+                        </path>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                    </svg>
+                                    </div>
+                                </li>
+                                <!-- <li>
+                                  <div class="divid menu-item" ><a href="#" >Template</a></div>
+                                </li> -->
+                                <li>
+                                    <div class="divid menu-item" style="display:flex">
+                                        <a data-menu="4" class="menu-anchor onclickbtn"
+                                           style=" width: 100%; font-weight:medium;">
+                                            <i style="margin-right:10px ;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                                     class="bi bi-card-image" viewBox="0 0 16 16">
+                                                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                                    <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z" />
+                                                </svg>
+                                            </i>Image
+                                        </a>
+                                        <svg class="spt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                             version="1.1" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 451.846 451.847"
+                                             style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve">
+                                        <g>
+                                        <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z">
+                        </path>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                    </svg>
+                                    </div>
+                                </li>
+                                <li>
+                                    <hr>
+                                </li>
+                                @*<li>
+                                        <div class="divid menu-item" style="display:flex">
+                                            <a data-menu="3" onclick="logoimg1()" class="menu-anchor"
+                                               style=" width: 100%; font-weight:medium;">
+                                                <i style="margin-right:10px ;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                         class="bi bi-file-earmark-spreadsheet" viewBox="0 0 16 16">
+                                                        <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2V9H3V2a1 1 0 0 1 1-1h5.5v2zM3 12v-2h2v2H3zm0 1h2v2H4a1 1 0 0 1-1-1v-1zm3 2v-2h3v2H6zm4 0v-2h3v1a1 1 0 0 1-1 1h-2zm3-3h-3v-2h3v2zm-7 0v-2h3v2H6z" />
+                                                    </svg>
+                                                </i>Add Details
+                                            </a>
+                                            <div class="divid spinner-box" id="logoimg1" style="margin-right: 20px;">
+                                                <div class="divid circle-border">
+                                                    <div class="divid circle-core"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>*@
+                                <li>
+                                    @if (ViewBag.publish == 1)
+                                    {
+                                        <div class="divid menu-item" style="display:flex">
+                                            <a onclick="actionupdate()" class="menu-anchor onclickbtn"
+                                               style=" width: 100%; font-weight:medium;">
+                                                <i style="margin-right:10px ;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                         class="bi bi-broadcast" viewBox="0 0 16 16">
+                                                        <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+                                                    </svg>
+                                                </i>Publish
+                                            </a>
+                                            <div class="divid spinner-box" id="logoimg1" style="margin-right: 20px;">
+                                                <div class="divid circle-border">
+                                                    <div class="divid circle-core"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+                                    else
+                                    {
+                                        <div class="divid menu-item" style="display:flex">
+                                            <a onclick="action()" class="menu-anchor onclickbtn"
+                                               style=" width: 100%; font-weight:medium;">
+                                                <i style="margin-right:10px ;">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                                         class="bi bi-broadcast" viewBox="0 0 16 16">
+                                                        <path d="M3.05 3.05a7 7 0 0 0 0 9.9.5.5 0 0 1-.707.707 8 8 0 0 1 0-11.314.5.5 0 0 1 .707.707zm2.122 2.122a4 4 0 0 0 0 5.656.5.5 0 1 1-.708.708 5 5 0 0 1 0-7.072.5.5 0 0 1 .708.708zm5.656-.708a.5.5 0 0 1 .708 0 5 5 0 0 1 0 7.072.5.5 0 1 1-.708-.708 4 4 0 0 0 0-5.656.5.5 0 0 1 0-.708zm2.122-2.12a.5.5 0 0 1 .707 0 8 8 0 0 1 0 11.313.5.5 0 0 1-.707-.707 7 7 0 0 0 0-9.9.5.5 0 0 1 0-.707zM10 8a2 2 0 1 1-4 0 2 2 0 0 1 4 0z" />
+                                                    </svg>
+                                                </i>Publish
+                                            </a>
+                                        </div>
+                                    }
+
+
+
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="divid submenu menu" data-menu="1">
+                            <div class="divid submenu-back">
+                                <div class="divid menu-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                         x="0px" y="0px" width="10px" height="10px" viewBox="0 0 451.847 451.847"
+                                         style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve" class="spt">
+                                    <g>
+                                    <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0   c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744   c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z">
+                      </path>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                  </svg>
+                                    <a href="#" class="menu-back onclickbtn">BACK</a>
+                                    <input type="hidden" id="ccolor" value="0" />
+                                </div>
+                            </div>
+                            <ul style="padding-left: 30px; margin-top:15px; ">
+                                <li>
+                                    <div class="divid  dd col-lg-12" style="display: flex;  padding-left: 0px;">
+                                        <div class="divid col-6" style="padding-left: 0px;">
+                                            <label class="dd" style="margin-bottom:15px;">Background Color:</label>
+                                            <a id="color-picker" class="onclickbtn" onclick="changeColor(this)"></a>
+                                        </div>
+                                        <div class="divid col-6" style="padding-left: 0px;">
+                                            <label class="dd" style="margin-bottom:15px;">Component Color:</label>
+                                            <a id="color-picker7" class="onclickbtn" onchange="compColor(this)"></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <br>
+                                <br>
+                                <li>
+                                    <label class="dd " style="margin-bottom:15px; font-weight: 600;">Icons Color:</label>
+                                    <a id="color-picker8" class="onclickbtn" onclick="changeIconColor(this)"></a>
+                                    <br>
+                                <li>
+                                    <label class="dd " style="margin-bottom:15px; font-weight: 600;">Button Color:</label>
+                                    <div class="divid  dd col-lg-12" style="display: flex;  padding-left: 0px;">
+                                        <div class="divid col-4" style="padding-left: 0px;">
+                                            <label>Color:</label>
+                                            <a id="color-picker1" class="onclickbtn" onclick="changebtnColor(this)"></a>
+                                        </div>
+                                        <div class="divid col-4" style="padding-left: 0px;">
+                                            <label>Font:</label>
+                                            <a id="color-picker2" class="onclickbtn" onclick="changefontColor(this)"></a>
+
+                                        </div>
+                                        <div class="divid col-4" style="padding-left: 0px;">
+                                            <label>Border:</label>
+                                            <a id="color-picker3" class="onclickbtn" onclick="changeborderColor(this)"></a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <br>
+                                <br>
+                                <li>
+                                    <label class="dd " style="margin-bottom:15px; font-weight: 600;">Button Hover:</label>
+                                    <a id="color-picker9" class="onclickbtn" onchange="buttonhovercolor(this)"></a>
+                                </li>
+                                @*<li>
+                                        <label class="dd " style="margin-bottom:15px; font-weight: 600;">Icon Link:</label>
+                                        <div class="divid col-lg-12" style="display: flex;  padding-left: 0px;">
+                                            <div class="divid col-lg-8" style="padding-left: 0px;">
+                                                <label>Link:</label>
+                                                <input id="" class="form-control" type="text" />
+                                            </div>
+                                            <div class="divid col-lg-4" style="padding-left: 0px;">
+                                                <label></label>
+                                                <a class="button-3" onclick=""> Update</a>
+                                            </div>
+                                        </div>
+                                    </li>*@
+                            </ul>
+                        </div>
+                        <div class="divid submenu menu" data-menu="2">
+                            <div class="divid submenu-back">
+                                <div class="divid menu-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                         x="0px" y="0px" width="10px" height="10px" viewBox="0 0 451.847 451.847"
+                                         style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve" class="spt">
+                                    <g>
+                                    <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0   c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744   c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z">
+                      </path>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                  </svg>
+                                    <a href="#" class="menu-back onclickbtn">BACK</a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <br>
+                                    <label>Font Color :</label>
+                                    <br>
+                                    <a id="color-picker5" class="onclickbtn" onchange="changetextColor(this)"></a>
+                                    @*<input type="color" id="fontcolor" onchange="changetextColor(this);" name="fontcolor" style="width:95%;"
+                                        value="#0000">*@
+                                </li>
+
+                                <li>
+                                    <br>
+                                    <label>Font family </label>
+                                    <select id="select_font" class="dropdown-item" style="width: 95%;" onchange="changeFont(this);">
+                                        <option value="Arial">Arial</option>
+                                        <option value="Sans Serif" selected>Sans Serif</option>
+                                        <option value="Comic Sans MS">Comic Sans MS</option>
+                                        <option value="Times New Roman">Times New Roman</option>
+                                        <option value="Courier New">Courier New</option>
+                                        <option value="Verdana">Verdana</option>
+                                        <option value="Trebuchet MS">Trebuchet MS</option>
+                                        <option value="Arial Black">Arial Black</option>
+                                        <option value="Impact">Impact</option>
+                                        <option value="Bookman">Bookman</option>
+                                        <option value="Garamond">Garamond</option>
+                                        <option value="Palatino">Palatino</option>
+                                        <option value="Georgia">Georgia</option>
+                                    </select>
+
+                                </li>
+                                <li>
+                                    <br>
+                                    <label>Font Weight</label>
+                                    <select id="select_fontweight" class="dropdown-item" style="width: 95%;"
+                                            onchange="changefontweight(this);">
+                                        <option value="normal" selected>Normal</option>
+                                        <option value="100">100</option>
+                                        <option value="200">200</option>
+                                        <option value="300">300</option>
+                                        <option value="400" selected>400</option>
+                                        <option value="500">500</option>
+                                        <option value="600">600</option>
+                                        <option value="700">700</option>
+                                        <option value="800">800</option>
+                                        <option value="900">900</option>
+                                        <option value="bold">bold</option>
+                                        <option value="bolder">bolder</option>
+                                        <option value="lighter">lighter</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <br>
+                                    <label>Font Style</label>
+                                    <select id="select_style" class="dropdown-item" style="width: 95%;" onchange="changeStyle(this);">
+                                        <option value="italic">Italic</option>
+                                        <option value="normal" selected>Normal</option>
+                                        <option value="oblique">Oblique</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <br>
+                                    <label>Font size</label>
+                                    <select id="select_fontsize" class="dropdown-item" style="width: 95%;"
+                                            onchange="changefontsize(this);">
+                                        <option value="10">10</option>
+                                        <option value="12" selected>12</option>
+                                        <option value="14">14</option>
+                                        <option value="16">16</option>
+                                        <option value="18">18</option>
+                                        <option value="20">20</option>
+                                        <option value="22">22</option>
+                                        <option value="24">24</option>
+                                        <option value="26">26</option>
+                                        <option value="28">28</option>
+                                        <option value="30">30</option>
+                                        <option value="36">36</option>
+                                        <option value="40">40</option>
+                                        <option value="48">48</option>
+                                        <option value="54">54</option>
+                                        <option value="60">60</option>
+                                        <option value="66">66</option>
+                                        <option value="72">72</option>
+                                        <option value="78">78</option>
+                                        <option value="84">84</option>
+                                        <option value="90">90</option>
+                                        <option value="96">96</option>
+                                        <option value="96">128</option>
+                                        <option value="96">256</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <br>
+                                    <label>Font Decoration</label>
+                                    <select id="select_fontsize" class="dropdown-item" style="width: 95%;"
+                                            onchange="changefontdecoration(this);">
+                                        <option value="line-through">Line-through</option>
+                                        <option value="none" selected>None</option>
+                                        <option value="overline">Overline</option>
+                                        <option value="underline">Underline</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <br>
+                                    <label>Font Transform</label>
+                                    <select id="select_fontsize" class="dropdown-item" style="width: 95%;"
+                                            onchange="changefonttransform(this);">
+                                        <option value="capitalize">Capitalize</option>
+                                        <option value="lowercase" selected>Lowercase</option>
+                                        <option value="uppercase">Uppercase</option>
+                                    </select>
+                                </li>
+
+                            </ul>
+                        </div>
+                        <div class="divid submenu menu" data-menu="3">
+                            <div class="divid submenu-back">
+                                <div class="divid menu-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                         x="0px" y="0px" width="10px" height="10px" viewBox="0 0 451.847 451.847"
+                                         style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve" class="spt">
+                                    <g>
+                                    <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0   c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744   c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z">
+                      </path>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                  </svg>
+                                    <a href="#" class="menu-back onclickbtn">BACK</a>
+                                </div>
+                            </div>
+                            <ul>
+                                <style>
+                                    .dd {
+                                        margin-right: 20px;
+                                    }
+
+                                    label {
+                                        font-weight: 400;
+                                        font-size: 14px;
+                                    }
+                                </style>
+                                <li>
+                                    <br>
+                                    <label class="margin-top:10px">Upload Logo</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 15px; line-height: .7;"
+                                               class="form-control menu-item" type="file">
+                                    </div>
+                                </li>
+                                <hr>
+                                <li>
+                                    <label>Company name</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; margin-right: 10px; line-height: .5;"
+                                               class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Address</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                               class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Distric</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                               class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>State</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                               class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Mobile Number</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                               class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <hr>
+                                <li>
+                                    <label>Facebook</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                               class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Instagram</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                               class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Linkedin</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                               class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Youtube</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                               class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Twitter</label>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                               class="form-control menu-item" type="text">
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="divid submenu menu" data-menu="4">
+                            <div class="divid submenu-back">
+                                <div class="divid menu-item">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                                         x="0px" y="0px" width="10px" height="10px" viewBox="0 0 451.847 451.847"
+                                         style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve" class="spt">
+                                    <g>
+                                    <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0   c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744   c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z">
+                      </path>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                                    <g>
+                    </g>
+                  </svg>
+                                    <a href="#" class="menu-back onclickbtn">BACK</a>
+                                </div>
+                            </div>
+                            <ul>
+                                <li>
+                                    <br>
+                                    <label>Upload Image</label>
+                                    <div class="divid menu-item dd">
+                                        <input id="#*"
+                                               style="margin-top: 5px;margin-bottom: 15px;line-height: 1.7; height: 38px;"
+                                               class="form-control menu-item imgid2" title="Upload Image" accept="image/*"
+                                               onchange="ImageUpload(event);" type="file">
+                                    </div>
+                                    <div class="divid menu-item dd">
+                                        <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                               class="form-control menu-item imgurl imgid2" onkeypress='imageurl(event)' type="text">
+                                    </div>
+                                </li>
+                                <hr>
+                                <li>
+                                    <label>Image Size:</label>
+                                    <div class="divid menu-item dd " style="display: flex; margin-top: 10px;">
+                                        <div>
+                                            <label>Width</label><input style="margin-top: 5px;margin-bottom: 10px; margin-right: 10px; line-height: .5;"
+                                                                       class="form-control menu-item dd widthtxt" type="text">
+                                        </div>
+                                        <div>
+                                            <label>Height</label> <input style="margin-top: 5px;margin-bottom: 10px; line-height: .5;"
+                                                                         class="form-control menu-item dd heighttxt" type="text">
+                                        </div>
+                                        <div style="width: 55px">
+                                            <label></label>
+                                            <button class="button-3" onclick="imagesize(event);" role="button">Go</button>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>Delete:</label>
+                                    <div class="divid menu-item dd">
+                                        <button class="button-3 " onclick='deleteatter(event)' role="button">Delete</button>
+                                    </div>
+                                </li>
+                                <br />
+                                <li>
+                                    <label>Icons:</label>
+                                    <div class="divid menu-item" style="display:flex">
+                                        <a data-menu="5" class="menu-anchor onclickbtn"
+                                           style=" width: 100%; font-weight:medium;">
+                                            <i style="margin-right:10px ;">
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                                     class="bi bi-card-image" viewBox="0 0 16 16">
+                                                    <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z" />
+                                                    <path d="M1.5 2A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h13a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-13zm13 1a.5.5 0 0 1 .5.5v6l-3.775-1.947a.5.5 0 0 0-.577.093l-3.71 3.71-2.66-1.772a.5.5 0 0 0-.63.062L1.002 12v.54A.505.505 0 0 1 1 12.5v-9a.5.5 0 0 1 .5-.5h13z" />
+                                                </svg>
+                                            </i>Select Icons
+                                        </a>
+                                        <svg class="spt" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                             version="1.1" x="0px" y="0px" width="10px" height="10px" viewBox="0 0 451.846 451.847"
+                                             style="enable-background:new 0 0 451.846 451.847;" xml:space="preserve">
+                                        <g>
+                                        <path d="M345.441,248.292L151.154,442.573c-12.359,12.365-32.397,12.365-44.75,0c-12.354-12.354-12.354-32.391,0-44.744   L278.318,225.92L106.409,54.017c-12.354-12.359-12.354-32.394,0-44.748c12.354-12.359,32.391-12.359,44.75,0l194.287,194.284   c6.177,6.18,9.262,14.271,9.262,22.366C354.708,234.018,351.617,242.115,345.441,248.292z">
+                        </path>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                                        <g>
+                      </g>
+                    </svg>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="divid submenu menu" data-menu="5" style="position:absolute">
+                        <div class="divid submenu-back">
+                            <div class="divid menu-item">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
+                                     y="0px" width="10px" height="10px" viewBox="0 0 451.847 451.847"
+                                     style="enable-background:new 0 0 451.847 451.847;" xml:space="preserve" class="spt">
+                                <g>
+                                <path d="M97.141,225.92c0-8.095,3.091-16.192,9.259-22.366L300.689,9.27c12.359-12.359,32.397-12.359,44.751,0   c12.354,12.354,12.354,32.388,0,44.748L173.525,225.92l171.903,171.909c12.354,12.354,12.354,32.391,0,44.744   c-12.354,12.365-32.386,12.365-44.745,0l-194.29-194.281C100.226,242.115,97.141,234.018,97.141,225.92z">
+                    </path>
+                  </g>
+                                <g>
+                  </g>
+                                <g>
+                  </g>
+                                <g>
+                  </g>
+                                <g>
+                  </g>
+                                <g>
+                  </g>
+                                <g>
+                  </g>
+                                <g>
+                  </g>
+                                <g>
+                  </g>
+                                <g>
+                  </g>
+                                <g>
+                  </g>
+                                <g>
+                  </g>
+                                <g>
+                  </g>
+                                <g>
+                  </g>
+                                <g>
+                  </g>
+                                <g>
+                  </g>
+                </svg>
+                                <a href="#" class="menu-back onclickbtn">BACK</a>
+                            </div>
+                        </div>
+                        @*<ul>
+                                <li>
+                                    <div class="divid menu-item onclickbtn"><a href="#">Subitem</a></div>
+                                </li>
+                                <li>
+                                    <div class="divid menu-item onclickbtn"><a href="#">Subitem</a></div>
+                                </li>
+                                <li>
+                                    <div class="divid menu-item onclickbtn"><a href="#">Subitem</a></div>
+                                </li>
+                            </ul>*@
+                        <div class="iconchange divid">
+                            <i class="fa fa-audio-description iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-address-book iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-address-book-o iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-address-card iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-address-card-o iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-adjust iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-american-sign-language-interpreting iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-anchor iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-archive iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-area-chart iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-arrows iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-arrows-h iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-arrows-v iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-asl-interpreting iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-assistive-listening-systems iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-asterisk iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-at iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-automobile iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-balance-scale iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-ban iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bank iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bar-chart iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bar-chart-o iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-barcode iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bars iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bath iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bathtub iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-0 iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-1 iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-2 iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-3 iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-4 iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-empty iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-full iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-half iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-quarter iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-battery-three-quarters iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bed iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-beer iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bell iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bell-o iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bell-slash iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bell-slash-o iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bicycle iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-binoculars iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-birthday-cake iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-blind iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bolt iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bomb iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-book iconupdate" aria-hidden="true"></i>
+                            <i class="fa fa-bookmark iconupdate" aria-hidden="true"></i>
+                        </div>
+                        <hr />
+                        <div class="divid" style="padding:10px">
+                            <label>Change Icons:</label>
+                            <div class="divid  dd col-lg-12" style="display: flex;  padding: 0px;">
+                                <div class="divid col-4" style="padding-left: 0px; padding-right: 0px;">
+                                    <label class="dd" style="margin-bottom: 15px;text-align: center;margin-left: auto;margin-right: auto;padding-right: 0px;">Selected Icon:</label>
+                                    <div class="divid ccol" style="margin-left: auto;margin-right: auto;text-align: center;justify-content: center;">
+                                        <i id="cicon2" class="fa fa-bookmark iconsize" style="color: !important;margin-left: auto;margin-right: auto;text-align: center !important;font-size: x-large;"></i>
+                                    </div>
+                                </div>
+                                <div class="divid col-4 ccol" style="margin-left: auto;margin-right: auto;text-align: center;justify-content: center;">
+                                    <br />
+                                    <br />
+                                    <div class="divid ccol mt-3" style="margin-left: auto;margin-right: auto;text-align: center;justify-content: center;">
+                                        <i class="fa fa-exchange mt-2" style="color: !important;margin-left: auto;margin-right: auto;text-align: center !important;font-size: x-large;"></i>
+                                    </div>
+                                </div>
+                                <div class="divid col-4 ccol" style="padding-left: 0px;padding-right: 0px;">
+                                    <label class="dd" style="margin-bottom:15px;text-align:center;padding-right: 0px;margin-left: auto;margin-right: auto;">Change Icon:</label>
+                                    <div class="divid ccol" style="margin-left: auto;margin-right: auto;text-align: center;justify-content: center;">
+                                        <i id="cicon1" class="fa fa-bookmark iconsize" style="color: !important;margin-left: auto;margin-right: auto;text-align: center !important;font-size: x-large;"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <br />
+                            <br />
+                            <a class="btn btn-success col-12 onclickbtn iconidupdate" onclick="IconUpdate(id)">Update</a>
+                            <div class="mt-3" style="display: flex; ">
+                                <a class="btn btn-danger col-12 onclickbtn iconidupdate " onclick="IconDelete(id)">Delete</a>
+                                @*<a class="btn btn-warning col-6 onclickbtn " onclick="IconAdd(id)">Add</a>*@
+                            </div>
+
+                        </div>
+
+                        <hr />
+                        <div class="divid" style="padding:10px">
+                            <label><b>Icons Size:</b></label>
+                            <br />
+                            <div class="divid  dd col-lg-12" style="display: flex;  padding: 0px;">
+                                <div class="divid col-6" style="padding-left: 0px; padding-right: 0px;">
+                                    <input type="text" id="Iconsizeinput" class="form-control" />
+                                </div>
+                                <div class="divid col-2" style="padding-left: 0px; padding-right: 0px;">
+                                    <label>px</label>
+                                </div>
+                                <div class="divid col-4" style="padding-left: 0px; padding-right: 0px;">
+                                    <a class="button-3 onclickbtn iconidupdate keepiconid" onclick="IconsizeUpdate(id)" style="margin:0px">Ok</a>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="divid clear"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="conteudo">
+        <div class="divid conteudo-inner">
+            <div id="div-id-1" class="conteudo-wrapper">
+                <!-- html page render -->
+                <input type="hidden" id="themename" value="@ViewBag.Themename" />
+
+            </div>
+        </div>
+    </div>
+    <style>
+        .button1 {
+            display: inline-flex !important;
+            align-items: center !important;
+            border: 0 !important;
+            padding: 0.375em 0.75em !important;
+            border-radius: 4px !important;
+            background-color: transparent !important;
+            cursor: pointer !important;
+            border-bottom: 1px solid !important;
+            margin-right: 0.5rem !important;
+            transition: 0.25s ease !important;
+            font-weight: 500 !important;
+        }
+
+            .button1 svg {
+                margin-right: 0.375em;
+                width: 1.25em;
+                height: 1.25em;
+            }
+
+        .button1--save {
+            background-color: #e0e4fa;
+            color: #2f47be;
+        }
+
+            .button1--save:hover {
+                color: #e0e4fa;
+                background-color: #2f47be;
+            }
+
+        .button1--schedule {
+            background-color: #ece0fa;
+            color: #722fbe;
+        }
+
+            .button1--schedule:hover {
+                color: #ece0fa;
+                background-color: #722fbe;
+            }
+
+        .button1--publish {
+            background-color: #8ae2b6 !important;
+            color: #22744b;
+        }
+
+            .button1--publish:hover {
+                color: #8ae2b6;
+                background-color: #22744b !important;
+            }
+
+        .button1--delete {
+            background-color: #fdc8bf;
+            color: #bd1717;
+        }
+
+            .button1--delete:hover {
+                color: #fdc8bf;
+                background-color: #bd1717;
+            }
+    </style>
+    <div class="modal fade" id="domlink" tabindex="-1" aria-labelledby="domlinkLabel" show="true">
+        <div class="divid modal-dialog">
+            <div class="divid modal-content">
+                <div class="divid modal-header">
+                    <h5 class="modal-title onclickbtn" id="domlinkLabel">Edit Button</h5>
+                    <button type="button" id="domlinkclose" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" style=" width: 30px; " class="ccx onclickbtn">&times;</span>
+                    </button>
+                </div>
+                <div class="divid modal-body container" style="margin-top: 10px;">
+                    <span id="w" style="color:orangered" class="ccx onclickbtn "></span>
+                    <label for="">Name</label>
+                    <input type="text" style="margin-bottom:1rem" class="form-control" id="dname" placeholder="Enter Name" required />
+                    <label for="">Link<span class="onclickbtn ccx" style="font-size:12px; padding-left:10px">(Include Https://...)</span></label>
+                    <input type="text" style="margin-bottom:1rem" class="form-control" id="dlink" placeholder="https://www.abcd.com" required />
+                    <div class="divid ">
+                        <a contenteditable="false" id="1" onclick="linked1(id)" class="btn btn-info mt-2 x2 onclickbtn">Submit</a>
+                        @*<div class="divid edit-icon" style="height:20px;width:20px">
+                                <input type="file" id="#*" class="v2" onchange="Testing(id)" class="tlink">
+                                <img src="~/Img/imglogo.png" style="width: 20px;height: 20px;" class="onclickbtn" />
+                            </div>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divid modal fade" id="Imglink" tabindex="-1" aria-labelledby="ImglinkLabel" show="true">
+        <div class="divid modal-dialog">
+            <div class="divid modal-content">
+                <div class="divid modal-header">
+                    <h5 class="modal-title ccx onclickbtn" id="ImglinkLabel">Edit Image</h5>
+                    <button type="button" id="Imglinkclose" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="ccx onclickbtn" style=" width: 30px; ">&times;</span>
+                    </button>
+                </div>
+                <div class="divid modal-body">
+                    <span id="w" style="color:orangered" class="onclickbtn"></span>
+                    <label for="">Image Link<span style="font-size:12px; padding-left:10px" class="ccx onclickbtn">(Include Https://...)</span></label>
+                    <input type="text" style="margin-bottom:1rem" class="form-control" id="dlink1" placeholder="https://www.abcd.com" required />
+                    <div class="divid ">
+                        <a contenteditable="false" id="1" onclick="linked(id)" class="btn btn-info mt-2 q2 onclickbtn">Submit</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divid modal fade" id="userEditModal" tabindex="-1" aria-labelledby="userEditModalLabel" show="true" data-backdrop="static" role="dialog" aria-hidden="true">
+        <div class="divid modal-dialog">
+            <div class="divid modal-content container" style="margin-top: 10px;">
+                <div class="divid modal-header">
+                    <h5 class="modal-title ccx onclickbtn" id="userEditModalLabel">Domain Options</h5>
+                    <button type="button" id="userEditModalclose" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="ccx onclickbtn">&times;</span>
+                    </button>
+                    <!--<button type="button"--> @*id="userEditModalclose"*@
+                    <!--class="close" data-dismiss="modal" aria-label="Close" data-mdb-dismiss="modal">
+                        <span aria-hidden="true" class="ccx onclickbtn">&times;</span>
+                    </button>-->
+                    @*<button type="button" id="userEditModalclose" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true" class="ccx onclickbtn">&times;</span>
+                        </button>*@
+                </div>
+                <div class="divid modal-body">
+                    <span id="w" style="color:orangered" class="onclickbtn"></span>
+                    <label for="">Domains</label>
+                    @Html.DropDownListFor(model => domainName.Id, (IEnumerable<SelectListItem>)ViewBag.Domain, "--All--", new { @class = "form-control select2", id = "dom" })
+                    <span class=" text-body onclickbtn" id="wrongid" style="color:red !important"></span>
+                    <div>
+                        <div id="btnsub1">
+                            <button type="button" onclick="change()" class="button1 button1--publish mt-2 ccx">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="1.5" />
+                                    <path d="M17.4995 6.34835C19.7975 5.80967 21.4447 5.87208 21.8376 6.66002C22.5686 8.12616 18.6797 11.5491 13.1515 14.3053C7.62327 17.0616 2.5492 18.1074 1.81821 16.6413C1.4263 15.8553 2.36234 14.5067 4.16701 13.0001" stroke="currentColor" stroke-width="1.5" />
+                                </svg>
+                                Publish
+                            </button>
+                            @*<a onclick="change()" class=" btn btn-info mt-2">Submit</a>*@
+                        </div>
+                        <div class="divid spinner-box" id="logoimg2" style="margin-right: 20px;">
+                            <div class="divid circle-border">
+                                <div class="divid circle-core"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="divid modal fade" id="ErrorMod" tabindex="-1" aria-labelledby="ErrorModal1" show="false">
+        <div class="divid modal-dialog">
+            <div class="divid modal-content">
+                <div class="divid modal-header">
+                    <h5 class="modal-title ccx onclickbtn" id="ErrorModal1">Error</h5>
+                    <button type="button" class="close" id="ErrorModclose" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="ccx onclickbtn">&times;</span>
+                    </button>
+                </div>
+                <div class="divid modal-body">
+                    <div class="divid form-group col-12 ">
+                        <input id="" type="hidden" class="form-control ">
+                        <label for="" class="ccx">This Domain Already Used Theme </label>
+                        <label for="" class="ccx">So Choose Right Theme</label>
+                    </div>
+                    <div class="divid col-12">
+                        <button data-dismiss="modal" aria-label="Close" class="btn btn-success">Ok</button>
+                        <a href="/admin/Index" class="btn btn-outline-danger onclickbtn">Go to Dashboard</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/Editable/test1.js"></script>
+    @*<script src="https://unpkg.com/ionicons@5.1.2/dist/ionicons.js"></script>*@
+    <script src="~/Content/Editable/colorpicker.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/Content/popperjs/core/dist/umd/popper.min.js"></script>
+    @*<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>*@
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    @*<script src="~/Content/Editable/test3.js"></script>*@
+</body>
+
+</html>
+
+

@@ -1,0 +1,968 @@
+$(document).ready(function () {
+
+    var btnboarder = Array.from(document.querySelectorAll('.btn'));
+    $("#logoimg2").hide();
+    const colorPicker = new iro.ColorPicker("#color-picker", {
+        width: 90, color: "#fff"
+    });
+    colorPicker.on('color:change', function (color) {
+        $("#color-picker").css("backgroundColor:", color.hexString)
+        document.body.style.backgroundColor = color.hexString;
+        $("#Bodycolorval").val(color.hexString);
+    });
+
+    //button Background color change
+    const colorPicker1 = new iro.ColorPicker("#color-picker1", {
+        width: 60, color: "#fff"
+    });
+    colorPicker1.on('color:change', function (color) {
+        $("#color-picker1").css("color:", color.hexString)
+        $(".btn").css("backgroundColor", color.hexString);
+        $(".btn").attr("onMouseOut", "this.style.backgroundColor = `" + `${color.hexString}` + "`");
+    });
+
+    //button Font Color
+    const colorPicker2 = new iro.ColorPicker("#color-picker2", {
+        width: 60, color: "#fff"
+    });
+    colorPicker2.on('color:change', function (color) {
+        $("#color-picker2").css("color:", color.hexString)
+        btnboarder.forEach((arrayElement, index) => {
+            if (btnboarder[index].style.color = color.hexString) {
+            }
+        });
+    });
+
+    //Button Border Color
+    const colorPicker3 = new iro.ColorPicker("#color-picker3", {
+        width: 60, color: "#fff"
+    });
+    colorPicker3.on('color:change', function (color) {
+        $("#color-picker3").css("color:", color.hexString)
+        btnboarder.forEach((arrayElement, index) => {
+            if (btnboarder[index].style.borderColor = color.hexString) {
+            }
+        });
+    });
+
+    //font color
+    const colorPicker5 = new iro.ColorPicker("#color-picker5", {
+        width: 135, color: "#fff"
+    });
+    colorPicker5.on('color:change', function (color) {
+        $("#color-picker5").css("color:", color.hexString)
+        var sel = window.getSelection(); // Gets selection
+        if (sel.rangeCount) {
+            // Creates a new element, and insert the selected text with the chosen font inside
+            var e = document.createElement('span');
+            console.log(e);
+            e.style.color = color.hexString;
+            e.innerHTML = sel.toString();
+            var range = sel.getRangeAt(0);
+            range.deleteContents(); // Deletes selected text�
+            range.insertNode(e); // � and inserts the new element at its place
+        }
+        //    $(".btn").css("color", color.hexString);
+    });
+
+    const colorPicker7 = new iro.ColorPicker("#color-picker7", {
+        width: 90, color: "#fff"
+    });
+    colorPicker7.on('color:change', function (color) {
+        debugger;
+        $("#color-picker7").css("color:", color.hexString);
+        $(`.` + `imgid` + 2).attr("id", "");
+        const vox = $('#ccolor').val();
+        //    $('#' + vox).css('background-color:', color.hexString +' !important' );
+        if (vox != null && vox != "") {
+            $("#" + vox).attr("style", "background-color:" + color.hexString + " !important;");
+        }
+        //    document.getElementById(vox).style.backgroundColor = color.hexString + " !important";
+    });
+
+    const colorPicker8 = new iro.ColorPicker("#color-picker8", {
+        width: 90, color: "#fff"
+    });
+    colorPicker8.on('color:change', function (color) {
+        debugger;
+        $("#color-picker8").css("color:", color.hexString);
+        $(".text-primary").attr("style", 'color:' + color.hexString + ' !important;');
+        $(".fa").attr("style", 'color:' + color.hexString + ' !important;');
+        $("#Iconcolorval").val(color.hexString);
+    });
+
+
+    const colorPicker9 = new iro.ColorPicker("#color-picker9", {
+        width: 90, color: "#fff"
+    });
+    colorPicker9.on('color:change', function (color) {
+        debugger;
+        $("#color-picker9").css("color:", color.hexString);
+        $(".btn").attr("onMouseOver", "this.style.backgroundColor = `" + `${color.hexString}` + "`");
+    });
+
+
+    document.querySelector('.imgid2').value = '';
+    $("#logoimg").hide(); $("#logoimg1").hide();
+
+
+    var lineItem = Array.from(document.querySelectorAll('#contentR'));
+    //var Image = Array.from(document.querySelectorAll('img'));
+    //var Imagebtn = Array.from(document.querySelectorAll('input[onchange = "Testing(id)"]'));
+    var Image = Array.from(document.querySelectorAll('#imgchange'));
+    var ImageChange = Array.from(document.querySelectorAll('#imgchangebtn'));
+    var button = Array.from(document.querySelectorAll('#btnid'));
+    var link1 = Array.from(document.querySelectorAll('a'));
+    var link2 = Array.from(document.querySelectorAll('h1'));
+    var link3 = Array.from(document.querySelectorAll('h2'));
+    var link4 = Array.from(document.querySelectorAll('h3'));
+    var link5 = Array.from(document.querySelectorAll('h4'));
+    var link6 = Array.from(document.querySelectorAll('h5'));
+    var link7 = Array.from(document.querySelectorAll('h6'));
+    var link8 = Array.from(document.querySelectorAll('p'));
+    var link9 = Array.from(document.querySelectorAll('span'));
+    var link10 = Array.from(document.querySelectorAll('div'));
+
+
+    var aa = $("#Bodycolorval").val();
+    $("body").attr("style", 'background-color:' + aa + ' !important;');
+    var bb = $("#Iconcolorval").val();
+    $(".text-primary").attr("style", 'color:' + bb + ' !important;');
+    $(".fa").attr("style", 'color:' + bb + ' !important;');
+
+    //Imagebtn.forEach((arrayElement, index) => {
+    //    Imagebtn[index].setAttribute("id", "imgbtnid");
+    //});
+
+    //h1 atteribute
+    link2.forEach((arrayElement, index) => {
+        if (link2[index].className.match('onclickbtn') != 'onclickbtn') {
+            link2[index].setAttribute("id", "");
+            link2[index].setAttribute('contenteditable', 'true');
+            let aa = link2[index].getAttribute("class");
+            link2[index].className = aa + " contentR";
+        }
+    });
+
+    //h2 atteribute
+    link3.forEach((arrayElement, index) => {
+        if (link3[index].className.match('onclickbtn') != 'onclickbtn') {
+            link3[index].setAttribute("id", "");
+            link3[index].setAttribute('contenteditable', 'true');
+            let aa = link3[index].getAttribute("class");
+            link3[index].className = aa + " contentR";
+        }
+    });
+
+    //h3 atteribute
+    link4.forEach((arrayElement, index) => {
+        if (link4[index].className.match('onclickbtn') != 'onclickbtn') {
+            link4[index].setAttribute("id", "");
+            link4[index].setAttribute('contenteditable', 'true');
+            let aa = link4[index].getAttribute("class");
+            link4[index].className = aa + " contentR";
+        }
+    });
+
+    //h4 atteribute
+    link5.forEach((arrayElement, index) => {
+        if (link5[index].className.match('onclickbtn') != 'onclickbtn') {
+            link5[index].setAttribute("id", "");
+            link5[index].setAttribute('contenteditable', 'true');
+            let aa = link5[index].getAttribute("class");
+            link5[index].className = aa + " contentR";
+        }
+    });
+
+    //h5 atteribute
+    link6.forEach((arrayElement, index) => {
+        if (link6[index].className.match('onclickbtn') != 'onclickbtn') {
+            link6[index].setAttribute("id", "");
+            link6[index].setAttribute('contenteditable', 'true');
+            let aa = link6[index].getAttribute("class");
+            link6[index].className = aa + " contentR";
+        }
+
+    });
+
+    //h6 atteribute
+    link7.forEach((arrayElement, index) => {
+        if (link7[index].className.match('onclickbtn') != 'onclickbtn') {
+            link7[index].setAttribute("id", "");
+            link7[index].setAttribute('contenteditable', 'true');
+            let aa = link7[index].getAttribute("class");
+            link7[index].className = aa + " contentR";
+        }
+    });
+
+    //p atteribute
+    link8.forEach((arrayElement, index) => {
+        if (link8[index].className.match('onclickbtn') != 'onclickbtn') {
+            link8[index].setAttribute("id", "");
+            link8[index].setAttribute('contenteditable', 'true');
+            let aa = link8[index].getAttribute("class");
+            link8[index].className = aa + " contentR";
+        }
+    });
+
+    //span atteribute
+    link9.forEach((arrayElement, index) => {
+        if (link9[index].className.match('onclickbtn') != 'onclickbtn') {
+            link9[index].setAttribute("id", "");
+            link9[index].setAttribute('contenteditable', 'true');
+            let aa = link9[index].getAttribute("class");
+            link9[index].className = aa + " contentR";
+        }
+
+    });
+
+    link10.forEach((arrayElement, index) => {
+        let aa = link10[index].getAttribute("class");
+        link10[index].className = aa + " ccol";
+
+    });
+
+    var link11 = Array.from(document.querySelectorAll('.ccol'));
+    link11.forEach((arrayElement, index) => {
+        if (link11[index].className.match("divid") == "divid") {
+        }
+        else if (link11[index].id.value == "" || link11[index].id == "") {
+            link11[index].id = "cocol" + [index];
+        }
+
+    });
+
+    var link13 = Array.from(document.querySelectorAll('.ccx'));
+    link13.forEach((arrayElement, index) => {
+        link13[index].setAttribute('contenteditable', "false");
+    });
+
+    var link14 = Array.from(document.querySelectorAll('header'));
+    link14.forEach((arrayElement, index) => {
+        if (link14[index].id.value == "" || link14[index].id == "") {
+            link14[index].id = "colmx" + [index];
+        }
+    });
+
+
+    var lin1 = Array.from(document.querySelectorAll('.contentR'));
+    lin1.forEach((arrayElement, index) => {
+        lin1[index].id += "Corex" + [index];
+    });
+
+    //button adding class
+    link1.forEach((arrayElement, index) => {
+        link1[index].setAttribute("id", "");
+        link1[index].id += "btn" + [index];
+        link1[index].className += " xbtn" + [index] + " linbtn" + [index];
+        link1[index].removeAttribute('contenteditable');
+        if (link1[index].className.match('onclickbtn') == 'onclickbtn') {
+
+        }
+        else if (link1[index].className.match('nav-link') == 'nav-link') {
+
+        }
+        else if (link1[index].className.match('imagelink') == 'imagelink' || link1[index].className.match('fa') == 'fa') {
+            link1[index].setAttribute('href', '#*');
+            link1[index].setAttribute('onclick', 'dom1(id)');
+        }
+        else {
+            link1[index].setAttribute('href', '#*');
+            link1[index].setAttribute('onclick', 'dom(id)');
+        }
+
+    });
+
+    var link15 = Array.from(document.querySelectorAll('a'));
+    link15.forEach((arrayElement, index) => {
+        link15[index].setAttribute("contenteditable", false);
+    });
+
+    var link17 = Array.from(document.querySelectorAll('td'));
+    link17.forEach((arrayElement, index) => {
+        if (link17[index].id.value == "" || link17[index].id == "") {
+            link17[index].id = "tdid" + [index];
+        }
+    });
+
+    var link18 = Array.from(document.querySelectorAll('th'));
+    link18.forEach((arrayElement, index) => {
+        if (link18[index].id.value == "" || link18[index].id == "") {
+            link18[index].id = "thid" + [index];
+        }
+    });
+
+    var link19 = Array.from(document.querySelectorAll('.iconupdate'));
+    link19.forEach((arrayElement, index) => {
+        link19[index].id = "iconid" + [index];
+        link19[index].setAttribute('onclick', 'iconbtn(id)');
+
+    });
+
+    var link20 = Array.from(document.querySelectorAll(".fa, .far"));
+    link20.forEach((arrayElement, index) => {
+        if (link20[index].className.match('iconupdate') == 'iconupdate') {
+
+        }
+        else if (link20[index].className.match('iconsize') == 'iconsize') {
+
+        }
+        else {
+            link20[index].id = "newiconid" + [index];
+            link20[index].setAttribute('onclick', 'iconbtn1(id)');
+        }
+    });
+
+    var link21 = Array.from(document.querySelectorAll('small'));
+    link21.forEach((arrayElement, index) => {
+        if (link21[index].id.value == "" || link21[index].id == "") {
+            link21[index].id = "smallid" + [index];
+        }
+    });
+
+    //var link22 = Array.from(document.querySelectorAll('.far'));
+    //link22.forEach((arrayElement, index) => {
+    //    if (link22[index].className.match('iconupdate') == 'iconupdate') {
+
+    //    }
+    //    else if (link22[index].className.match('iconsize') == 'iconsize') {
+
+    //    }
+    //    else {
+    //        link22[index].id = "newiconida" + [index];
+    //        link22[index].setAttribute('onclick', 'iconbtn1(id)');
+    //    }
+    //});
+
+
+    //Image And Photos
+    Image.forEach((arrayElement, index) => {
+        Image[index].setAttribute("id", "");
+        Image[index].id += "w" + [index];
+        ImageChange.forEach((index, i) => {
+            ImageChange[i].setAttribute("id", "");
+            ImageChange[i].id += i;
+        });
+    });
+
+    addEventListener('dblclick', (event) => {
+        var test = event.srcElement.id;
+        let Txt = event.srcElement.innerHTML;
+        $(`#ccolor`).val(test);
+        $(`.` + `imgid` + 2).attr("id", "" + test + "");
+    });
+
+    //addEventListener('dblclick', (event) => {
+    //    var test = event.srcElement.id;
+    //    let Txt = event.srcElement.innerHTML;
+    //    $(`#ccolor`).val(test);
+    //    $(`.` + `imgid` + 2).attr("id", "" + test + "");
+    //});
+
+    addEventListener('mouseover', (event) => {
+       debugger;
+       var test = event.srcElement.id;
+       var test1 = $("#boaderpagecolor").val();
+       if (test != null && test != "") {
+           if (document.getElementById(test).className.match('ccol') == 'ccol' || document.getElementById(test).className.match('iconupdate') == 'iconupdate') {
+               if (test1 != null && test1 != "") {
+                   document.getElementById(test1).style.border = "none #0000FF";
+               }
+               $("#boaderpagecolor").val(test);
+               document.getElementById(test).style.border = "1px solid #a8b1ff";
+           }
+       }
+       else {
+           if (test != null && test != "") {
+               $("#boaderpagecolor").val(test);
+           }
+       }
+    });
+
+    const navLinks = document.querySelectorAll(".nav__link");
+    navLinks.forEach((link) => link.addEventListener("click", drop));
+
+    $("#userEditModalclose").click(function () {
+        debugger;
+        $("#userEditModal").modal("hide");
+    });
+
+    $("#domlinkclose").click(function () {
+        debugger;
+        $("#domlink").modal("hide");
+    });
+
+    $("#Imglinkclose").click(function () {
+        debugger;
+        $("#Imglink").modal("hide");
+    });
+
+    $("#ErrorModclose").click(function () {
+        debugger;
+        $("#ErrorMod").modal("hide");
+    });
+});
+
+
+function iconbtn(id) {
+    debugger;
+    if (document.getElementById(id).className.match('btn') == 'btn' || document.getElementById(id).className.match('menu-item') == 'menu-item') {
+    }
+    else {
+        let aa = document.getElementById(id).getAttribute("class");
+        $("#cicon1").attr("class", aa);
+        $("#cicon1").removeClass("iconupdate");
+        $("#cicon1").addClass("iconsize");
+    }
+}
+
+function iconbtn1(id) {
+    debugger;
+    const myid = id;
+    $(".imgid2").attr("id", "#*");
+    if (document.getElementById(myid).className.match('btn') == 'btn' || document.getElementById(myid).className.match('menu-item') == 'menu-item') {
+    }
+    else {
+        let aa = document.getElementById(myid).getAttribute("class");
+        $("#cicon2").attr("class", aa);
+        $("#cicon2").removeClass("iconupdate");
+        $("#cicon2").addClass("iconsize");
+        $(".iconidupdate").attr("id", myid);
+    }
+}
+
+function IconUpdate(id) {
+    debugger;
+    var myid = id;
+    let aa = document.getElementById("cicon1").getAttribute("class");
+    let iconid = id;
+    if (iconid != null && iconid != "") {
+        $(".iconidupdate").attr("id", "");
+        $("#" + iconid).attr("class", aa);
+        $("#" + id).removeClass("iconsize");
+    }
+}
+
+function IconDelete(id) {
+    let iconid = id;
+    if (iconid != null && iconid != "") {
+        $(".iconidupdate").attr("id", "");
+        $("#" + iconid).remove();
+    }
+}
+
+function IconsizeUpdate(id) {
+    debugger;
+    let iconid = id;
+    if (iconid != null && iconid != "") {
+        let aa = $("#Iconsizeinput").val();
+        $(".iconidupdate").attr("id", "");
+        $("#" + iconid).attr("style", "font-size:" + aa + "px");
+        $(".keepiconid").attr("id", iconid);
+    }
+}
+
+function ImageUpload(event) {
+    debugger;
+    var imgid = event.srcElement.id;
+    $(`.` + `imgid` + 2).attr("id", "#");
+    if (event.target.files.length > 0) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            var preview = document.getElementById(imgid);
+            preview.src = e.target.result;
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    }
+    const file =
+        document.querySelector('.imgid2');
+    file.value = '';
+
+}
+
+function imageurl(id) {
+    debugger;
+    var imgid = id.srcElement.id;
+    $(`.` + `imgid` + 2).attr("id", "#");
+    var imglink = $(".imgurl").val();
+    $('#' + imgid).attr("src", "" + imglink + "");
+    const file = document.querySelector('.imgid2');
+    file.value = '';
+}
+
+function imagesize(event) {
+    debugger;
+    var imgid = $("#ccolor").val();
+    var imgwidth = $('.widthtxt').val();
+    var imgheight = $('.heighttxt').val();
+    $(`.` + `imgid` + 2).attr("id", "#*");
+    var imglink = $("#" + imgid);
+    imglink.css("width", imgwidth);
+    imglink.css("height", imgheight);
+    $("#ccolor").val(imgid);
+}
+
+function Testing(id) {
+    console.log(id);
+    debugger;
+    $(`.` + `imgid` + 2).attr("id", "#");
+    if (event.target.files.length > 0) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            var preview = document.getElementById(`w` + id);
+            preview.src = e.target.result;
+        };
+
+        reader.readAsDataURL(event.target.files[0]);
+        //var src = event.target.result;
+
+    }
+    const file =
+        document.querySelector('.imgid2');
+    file.value = '';
+}
+
+function alert() {
+    swal("Hey Its is Demo Purpose Design so Enjoy that site.");
+}
+
+function linked1(id) {
+    var x = document.getElementById("dlink").value;
+    var y = document.getElementById("dname").value;
+    $(".lin" + id).text(y);
+    $(".lin" + id).attr("href", "" + x + "");
+    $("#" + id).on("change", function () {
+        readURL(this);
+    });
+    $('#domlink').modal('hide');
+    $('#dlink').val('');
+    $('#dname').val('');
+}
+
+function deleteatter(event) {
+    //var id = event.srcElement.id;
+    var imgid = $("#ccolor").val();
+
+    $(`.` + `imgid` + 2).attr("id", "#*");
+    const rm = document.getElementById(imgid);
+    rm.remove();
+
+}
+
+function changefontweight(font) {
+    var sel = window.getSelection(); // Gets selection
+    if (sel.rangeCount) {
+        // Creates a new element, and insert the selected text with the chosen font inside
+        var e = document.createElement('span');
+        e.style = 'font-weight:' + font.value + ';';
+        e.innerHTML = sel.toString();
+        var range = sel.getRangeAt(0);
+        range.deleteContents(); // Deletes selected text�
+        range.insertNode(e); // � and inserts the new element at its place
+    }
+};
+
+function changeStyle(font) {
+    debugger;
+    var sel = window.getSelection(); // Gets selection
+    if (sel.rangeCount) {
+        // Creates a new element, and insert the selected text with the chosen font inside
+        var e = document.createElement('span');
+        console.log(e);
+        e.setAttribute("id", "r");
+        e.style = 'font-style:' + font.value + ';';
+        e.innerHTML = sel.toString();
+        var range = sel.getRangeAt(0);
+        range.deleteContents(); // Deletes selected text�
+        range.insertNode(e); // � and inserts the new element at its place
+    }
+}
+
+function changefontsize(font) {
+    debugger;
+    var sel = window.getSelection(); // Gets selection
+    if (sel.rangeCount) {
+        // Creates a new element, and insert the selected text with the chosen font inside
+        var e = document.createElement('span');
+        console.log(e);
+        e.setAttribute("id", "r");
+        e.style = 'font-size:' + font.value + 'px ;';
+        e.innerHTML = sel.toString();
+        var range = sel.getRangeAt(0);
+        range.deleteContents(); // Deletes selected text�
+        range.insertNode(e); // � and inserts the new element at its place
+    }
+}
+
+function changeFont(font) {
+    debugger;
+    var sel = window.getSelection(); // Gets selection
+    if (sel.rangeCount) {
+        // Creates a new element, and insert the selected text with the chosen font inside
+        var e = document.createElement('span');
+        console.log(e);
+        e.setAttribute("id", "r");
+        e.style = 'Font-family:' + font.value + ';';
+        e.innerHTML = sel.toString();
+        var range = sel.getRangeAt(0);
+        range.deleteContents(); // Deletes selected text�
+        range.insertNode(e); // � and inserts the new element at its place
+    }
+}
+
+function changefontdecoration(font) {
+    debugger;
+    var sel = window.getSelection(); // Gets selection
+    if (sel.rangeCount) {
+        // Creates a new element, and insert the selected text with the chosen font inside
+        var e = document.createElement('span');
+        console.log(e);
+        e.setAttribute("id", "r");
+        e.style = 'text-decoration:' + font.value + ';';
+        e.innerHTML = sel.toString();
+        var range = sel.getRangeAt(0);
+        range.deleteContents(); // Deletes selected text�
+        range.insertNode(e); // � and inserts the new element at its place
+    }
+}
+
+function changefonttransform(font) {
+    debugger;
+    var sel = window.getSelection(); // Gets selection
+    if (sel.rangeCount) {
+        // Creates a new element, and insert the selected text with the chosen font inside
+        var e = document.createElement('span');
+        console.log(e);
+        e.setAttribute("id", "r");
+        e.style = 'text-transform:' + font.value + ';';
+        e.innerHTML = sel.toString();
+        var range = sel.getRangeAt(0);
+        range.deleteContents(); // Deletes selected text�
+        range.insertNode(e); // � and inserts the new element at its place
+    }
+}
+
+function changefontColor(color) {
+    debugger;
+    var sel = window.getSelection(); // Gets selection
+    if (sel.rangeCount) {
+        // Creates a new element, and insert the selected text with the chosen font inside
+        var e = document.createElement('span');
+        console.log(e);
+        e.setAttribute("id", "r");
+        e.style = 'color:' + color.value + ';';
+        e.innerHTML = sel.toString();
+        var range = sel.getRangeAt(0);
+        range.deleteContents(); // Deletes selected text�
+        range.insertNode(e); // � and inserts the new element at its place
+    }
+}
+
+function changetextColor(color) {
+    debugger;
+    var sel = window.getSelection(); // Gets selection
+    if (sel.rangeCount) {
+        // Creates a new element, and insert the selected text with the chosen font inside      
+        var e = document.createElement('span');
+        console.log(e);
+        var colors = $('#fontcolor').val();
+        e.style.color = colors;
+        e.innerHTML = sel.toString();
+        var range = sel.getRangeAt(0);
+        range.deleteContents(); // Deletes selected text�
+        range.insertNode(e); // � and inserts the new element at its place
+    }
+    //let colorIndicator = $('#color-picker5');
+    //var aa = colorIndicator.css.backgroundColor;
+    //var button = document.getElementsByTagName('a');
+    //button.style.color = aa;
+}
+
+function changeColor(color) {
+    debugger;
+    let colorIndicator = $('#color-picker');
+    var aa = colorIndicator.css.color;
+    var sel = window.getSelection(); // Gets selection
+    if (sel.rangeCount) {
+        // Creates a new element, and insert the selected text with the chosen font inside
+        var e = document.createElement('span');
+        e.style = 'Color:' + colorIndicator.css.color + ';';
+        e.innerHTML = sel.toString();
+        var range = sel.getRangeAt(0);
+        range.deleteContents(); // Deletes selected text�
+        range.insertNode(e); // � and inserts the new element at its place
+    }
+}
+
+function changebtnColor(color) {
+    debugger;
+    let colorIndicator = $('#color-picker1');
+    var aa = colorIndicator.css.color;
+    $('a').css("background-color", aa);
+}
+
+function buttonhovercolor(col) {
+    debugger;
+    $(".btn").attr("onMouseOver", "this.style.backgroundColor = `" + `${col.value}` + "`");
+}
+
+function changeIconColor(color) {
+    debugger;
+    let colorIndicator = $('#color-picker1');
+    $(".text-primary").attr("style:", 'color:' + colorIndicator.css.color + ' !important');
+    $(".fa").attr("style:", 'color:' + colorIndicator.css.color + ' !important');
+}
+
+//function changefontColor(color) {
+//    debugger;
+//    let colorIndicator = $('#color-picker2');
+//    var aa = colorIndicator.css.backgroundColor;
+//    var button = document.getElementsByTagName('a');
+//    button.style.color = aa;
+//}
+
+function changeborderColor(color) {
+    debugger;
+    let colorIndicator = $('#color-picker3');
+    var aa = colorIndicator.css.color;
+    $('a').css("borderColor", aa);
+}
+
+function compColor(color) {
+    let vox = $('#ccolor').val();
+    let colorIndicator = $('#color-picker7');
+    $("#" + vox).attr('style', 'background-color:' + colorIndicator.css.color + ' !important;');
+}
+
+function logoimg() {
+    $("#logoimg").show();
+    setTimeout(function () {
+        $("#logoimg").hide();
+    }, 4000);
+}
+
+//function logoimg1() {
+//    $("#logoimg1").show();
+//    setTimeout(function () {
+//        $("#logoimg1").hide();
+//    }, 300);
+//}
+
+function change() {
+    debugger;
+    var element = document.getElementById("btnsub1");
+    element.classList.add("dis");
+    $("#logoimg2").show();
+    setTimeout(function () {
+        $("#logoimg2").hide();
+        element.classList.remove("dis");
+    }, 30000);
+    $('#userEditModal').modal('show');
+    const box = document.querySelectorAll("#contentR");
+    const box1 = document.querySelectorAll(".rmedit");
+    const box2 = document.querySelectorAll(".contentR");
+    box.forEach(x => {
+        x.removeAttribute('contenteditable');
+    })
+    box1.forEach(x => {
+        x.removeAttribute('contenteditable');
+    })
+    box2.forEach(x => {
+        x.removeAttribute('contenteditable');
+    })
+    var asd = $("#dom").val();
+    var loca = $("#location").val();
+    var Content = {
+        Content: $("#content").html(), /*$("#content").html(),*/
+        ThemeName: $("#themename").val(),
+        ThemeId: $("#themeid").val(),
+        ThemePageId: $("#themepageid").val(),
+        DomainId: $("#dom").val(),
+
+    };
+    if (asd != null && asd != 0) {
+        $("#wrongid").text("");
+        $.ajax({
+            url: "/content/main",
+            method: "Post",
+            data: JSON.stringify(Content),
+            contentType: "application/json;charset=utf-8",
+            success: function (data) {
+                if (data.res == true) {
+                    window.location.href = loca;
+                    var element = document.getElementById("btnsub1");
+                    $("#logoimg2").hide();
+                    element.classList.remove("dis");
+                }
+                else {
+                    console.log("error");
+                    var element = document.getElementById("btnsub1");
+                    $("#logoimg2").hide();
+                    element.classList.remove("dis");
+                }
+            },
+            error: function (err) {
+                console.log(err);
+            }
+        })
+    }
+    else {
+        $("#wrongid").text("Select DomainId");
+        $("#logoimg2").hide();
+        element.classList.remove("dis");
+    }
+
+}
+
+function actionupdate() {
+    $("#logoimg1").show();
+    setTimeout(function () {
+        $("#logoimg1").hide();
+    }, 10000);
+    const box = document.querySelectorAll("#contentR");
+    const box2 = document.querySelectorAll(".contentR");
+    const box1 = document.querySelectorAll(".rmedit");
+    box.forEach(x => {
+        x.removeAttribute('contenteditable');
+    })
+    box1.forEach(x => {
+        x.removeAttribute('contenteditable');
+    })
+    box2.forEach(x => {
+        x.removeAttribute('contenteditable');
+    })
+    var Content = {
+
+        Content: $("#content").html(), /*$("#content").html(),*/
+        ThemeName: $("#themename").val(),
+        ThemeId: $("#themeid").val(),
+        ThemePageId: $("#themepageid").val(),
+        DomainId: $("#DomIdx").val(),
+        Id: $("#UserIdx").val(),
+    };
+    console.log(Content);
+    $.ajax({
+        url: "/content/main",
+        method: "Post",
+        data: JSON.stringify(Content),
+        contentType: "application/json;charset=utf-8",
+        success: function (data) {
+            location.href = "/Admin/Index";
+        },
+        error: function (err) {
+            console.log(err);
+        }
+    })
+}
+
+function bgtest(id) {
+    debugger;
+    $(`.` + `imgid` + 2).attr("id", "#");
+    if (event.target.files.length > 0) {
+        var reader = new FileReader();
+        reader.onload = function (e) {
+            var preview = document.getElementById(`bg-page` + id);
+            preview.style.backgroundImage = "url('" + e.target.result + "')";
+        };
+        reader.readAsDataURL(event.target.files[0]);
+    }
+    const file =
+        document.querySelector('.imgid2');
+    file.value = '';
+}
+
+//delete function
+function del(id) {
+    var div = document.getElementById(id);
+    div.remove()
+}
+
+//userEditModal Model Open
+function action() {
+    $('#userEditModal').modal('show');
+}
+
+//Button Name And Link Save
+function dom(id) {
+    $('#dname').val('');
+    $('#dlink').val('');
+    $('#domlink').modal('show');
+    $(`.` + `x` + 2).attr("id", "" + id + "");
+}
+
+//function linked1(id) {
+//    debugger
+//    //$(".x2").attr("id", "");
+//    var x = document.getElementById("dlink").value;
+//    var y = document.getElementById("dname").value;
+//    $(".x" + id).text=y;
+//    $(".lin" + id).attr("href", "" + x + "");
+//    $("#" + id).on("change", function () {
+//        readURL(this);
+//    });
+//    $('#domlink').modal('hide');
+//    $('#dlink').val('');
+//    $('#dname').val('');
+//}
+
+
+
+
+
+//Image Button LINK Save
+function dom1(id) {
+    $('#dlink1').val('');
+    $('#Imglink').modal('show');
+    $(`.` + `q` + 2).attr("id", "" + id + "");
+}
+
+function linked(id) {
+    var source = document.getElementById(id);
+    var x = document.getElementById("dlink1").value;
+    $(".lin" + id).attr("href", "" + x + "");
+    source.addEventListener('change', function () {
+        readURL(this);
+    });
+    $('#dlink1').val('');
+    $('#Imglink').modal('hide');
+}
+
+
+//$('#domlinkclose').on('click', function (eventObject) {
+//    $('#domlink').modal('hide');
+//});
+
+//$('#Imglinkclose').on('click', function (eventObject) {
+//    $('#Imglink').modal('hide');
+//});
+
+//$('#domlinkclose').on('click', function (eventObject) {
+//    $('#domlink').modal('dispose');
+//});
+
+function drop() {
+    const subMenu = this.nextElementSibling;
+    if (subMenu) {
+        if (subMenu.style.height == "0px" || subMenu.style.height == "") {
+            subMenu.style.height = subMenu.scrollHeight + "px";
+            sideNav.style.width = "20rem";
+        } else {
+            subMenu.style.height = "0px";
+        }
+    }
+}
+const menuBtn = document.querySelector("#nav-toggle");
+const sideNav = document.querySelector("#side-nav");
+menuBtn.addEventListener("click", toggleSideNav);
+
+function toggleSideNav() {
+    if (sideNav.style.width == "0px" || sideNav.style.width == "") {
+        sideNav.style.width = "14rem";
+    } else {
+        // close side nav
+        sideNav.style.width = "5.6rem";
+        // close all opened sub menus
+        document.querySelectorAll('.nav__drop').forEach(drop => drop.style.height = '0px');
+
+    }
+}
